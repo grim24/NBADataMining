@@ -51,26 +51,27 @@ end
 
 puts "Team, score,  Efg_pct, Turnover_PCT, orb_pct, ft_rate, class"
 
-(1..31).each do |day|
+(1..12).each do |month|
+  (1..31).each do |day|
 
-  address = "http://www.basketball-reference.com/boxscores/index.fcgi?month=" + 1.to_s + "&day=" + day.to_s + "&year=" + 2016.to_s
+    address = "http://www.basketball-reference.com/boxscores/index.fcgi?month=" + month.to_s + "&day=" + day.to_s + "&year=" + 2016.to_s
 
-  page = Nokogiri::HTML(RestClient.get(address))   
-  teams = page.css("table").css(".teams")
+    page = Nokogiri::HTML(RestClient.get(address))   
+    teams = page.css("table").css(".teams")
 
-  links = []
-  refs = teams.css("td.gamelink").css("a")
-  refs.each do |ref|
-    links << (ref['href'])
+    links = []
+    refs = teams.css("td.gamelink").css("a")
+    refs.each do |ref|
+      links << (ref['href'])
+    end
+
+
+    prefix = "http://www.basketball-reference.com/"
+    links.each do |link|
+      parse_game(Nokogiri::HTML(RestClient.get(prefix + link)))
+    end
+
   end
-
-
-  prefix = "http://www.basketball-reference.com/"
-  links.each do |link|
-    parse_game(Nokogiri::HTML(RestClient.get(prefix + link)))
-  end
-
 end
-
 
 
