@@ -11,7 +11,7 @@ import math
 file_path = '2016_results.csv'
 
 # Output file setup for Euclidean measure
-writer= open('2016_results_opp_team',"w+")
+writer= open('2016_results_opp_team.csv',"w+")
 
 
 writer.write(
