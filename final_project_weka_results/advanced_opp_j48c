@@ -1,0 +1,386 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -U -M 2
+Relation:     2016_advanced_results_opp_team-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   16
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location=  home
+               ast_PCT
+              stl_PCT
+               blk_PCT
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               opp_ast_PCT
+              opp_stl_PCT
+               opp_blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+ Efg_pct <= 0.415525
+|    opp_Efg_pct <= 0.374429
+|   |    Efg_pct <= 0.321918
+|   |   |    opp_Turnover_PCT <= 0.440191
+|   |   |   |    ft_rate <= 0.343899
+|   |   |   |   |   opp_stl_PCT <= 0.327189
+|   |   |   |   |   |   stl_PCT <= 0.179724:   win (3.0)
+|   |   |   |   |   |   stl_PCT > 0.179724
+|   |   |   |   |   |   |    opp_orb_pct <= 0.18711:   win (2.0)
+|   |   |   |   |   |   |    opp_orb_pct > 0.18711:   loss (19.0)
+|   |   |   |   |   opp_stl_PCT > 0.327189:   loss (35.0)
+|   |   |   |    ft_rate > 0.343899
+|   |   |   |   |    Turnover_PCT <= 0.382775
+|   |   |   |   |   |   opp_stl_PCT <= 0.364055:   win (12.0/1.0)
+|   |   |   |   |   |   opp_stl_PCT > 0.364055:   loss (2.0)
+|   |   |   |   |    Turnover_PCT > 0.382775
+|   |   |   |   |   |    opp_Efg_pct <= 0.166667:   win (2.0)
+|   |   |   |   |   |    opp_Efg_pct > 0.166667:   loss (18.0/1.0)
+|   |   |    opp_Turnover_PCT > 0.440191
+|   |   |   |    Efg_pct <= 0.182648:   loss (9.0)
+|   |   |   |    Efg_pct > 0.182648
+|   |   |   |   |    opp_orb_pct <= 0.328482:   win (20.0)
+|   |   |   |   |    opp_orb_pct > 0.328482
+|   |   |   |   |   |    Turnover_PCT <= 0.593301
+|   |   |   |   |   |   |    opp_Efg_pct <= 0.269406:   win (21.0)
+|   |   |   |   |   |   |    opp_Efg_pct > 0.269406
+|   |   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |   |    orb_pct <= 0.409563:   loss (10.0)
+|   |   |   |   |   |   |   |   |    orb_pct > 0.409563
+|   |   |   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.559809:   loss (3.0)
+|   |   |   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.559809:   win (4.0)
+|   |   |   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |   |   |    ast_PCT <= 0.442647:   win (7.0)
+|   |   |   |   |   |   |   |   |    ast_PCT > 0.442647
+|   |   |   |   |   |   |   |   |   |    Efg_pct <= 0.273973:   loss (4.0)
+|   |   |   |   |   |   |   |   |   |    Efg_pct > 0.273973:   win (5.0/1.0)
+|   |   |   |   |   |    Turnover_PCT > 0.593301
+|   |   |   |   |   |   |    ast_PCT <= 0.310294:   win (2.0)
+|   |   |   |   |   |   |    ast_PCT > 0.310294:   loss (15.0)
+|   |    Efg_pct > 0.321918
+|   |   |    opp_ft_rate <= 0.2187:   win (54.0)
+|   |   |    opp_ft_rate > 0.2187
+|   |   |   |   stl_PCT <= 0.294931
+|   |   |   |   |    opp_blk_PCT <= 0.458015
+|   |   |   |   |   |    ft_rate <= 0.204437:   loss (9.0/1.0)
+|   |   |   |   |   |    ft_rate > 0.204437
+|   |   |   |   |   |   |    opp_Efg_pct <= 0.303653:   win (16.0/1.0)
+|   |   |   |   |   |   |    opp_Efg_pct > 0.303653
+|   |   |   |   |   |   |   |    opp_blk_PCT <= 0.30916
+|   |   |   |   |   |   |   |   |    Turnover_PCT <= 0.311005:   win (3.0/1.0)
+|   |   |   |   |   |   |   |   |    Turnover_PCT > 0.311005:   loss (8.0)
+|   |   |   |   |   |   |   |    opp_blk_PCT > 0.30916:   win (8.0/1.0)
+|   |   |   |   |    opp_blk_PCT > 0.458015:   loss (12.0/1.0)
+|   |   |   |   stl_PCT > 0.294931
+|   |   |   |   |    Efg_pct <= 0.378995
+|   |   |   |   |   |   opp_stl_PCT <= 0.262673:   win (21.0/1.0)
+|   |   |   |   |   |   opp_stl_PCT > 0.262673
+|   |   |   |   |   |   |    orb_pct <= 0.461538
+|   |   |   |   |   |   |   |    Turnover_PCT <= 0.62201
+|   |   |   |   |   |   |   |   |    opp_Efg_pct <= 0.356164
+|   |   |   |   |   |   |   |   |   |    opp_orb_pct <= 0.392931:   win (7.0)
+|   |   |   |   |   |   |   |   |   |    opp_orb_pct > 0.392931
+|   |   |   |   |   |   |   |   |   |   |    orb_pct <= 0.320166:   loss (5.0)
+|   |   |   |   |   |   |   |   |   |   |    orb_pct > 0.320166
+|   |   |   |   |   |   |   |   |   |   |   |    Turnover_PCT <= 0.516746:   win (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |    Turnover_PCT > 0.516746:   loss (3.0)
+|   |   |   |   |   |   |   |   |    opp_Efg_pct > 0.356164:   loss (5.0)
+|   |   |   |   |   |   |   |    Turnover_PCT > 0.62201:   loss (6.0)
+|   |   |   |   |   |   |    orb_pct > 0.461538
+|   |   |   |   |   |   |   |    opp_orb_pct <= 0.5842
+|   |   |   |   |   |   |   |   |   opp_stl_PCT <= 0.359447
+|   |   |   |   |   |   |   |   |   |    blk_PCT <= 0.28626:   win (3.0)
+|   |   |   |   |   |   |   |   |   |    blk_PCT > 0.28626:   loss (2.0)
+|   |   |   |   |   |   |   |   |   opp_stl_PCT > 0.359447:   win (15.0)
+|   |   |   |   |   |   |   |    opp_orb_pct > 0.5842:   loss (2.0)
+|   |   |   |   |    Efg_pct > 0.378995:   win (40.0/1.0)
+|    opp_Efg_pct > 0.374429
+|   |    opp_Efg_pct <= 0.550228
+|   |   |    Efg_pct <= 0.315068
+|   |   |   |    Turnover_PCT <= 0.30622
+|   |   |   |   |    orb_pct <= 0.438669:   loss (30.0)
+|   |   |   |   |    orb_pct > 0.438669
+|   |   |   |   |   |    Efg_pct <= 0.285388
+|   |   |   |   |   |   |    orb_pct <= 0.577963:   loss (12.0)
+|   |   |   |   |   |   |    orb_pct > 0.577963:   win (3.0/1.0)
+|   |   |   |   |   |    Efg_pct > 0.285388:   win (6.0/1.0)
+|   |   |   |    Turnover_PCT > 0.30622:   loss (167.0/2.0)
+|   |   |    Efg_pct > 0.315068
+|   |   |   |    Turnover_PCT <= 0.416268
+|   |   |   |   |    opp_Turnover_PCT <= 0.602871
+|   |   |   |   |   |    opp_ft_rate <= 0.263074
+|   |   |   |   |   |   |    opp_ast_PCT <= 0.354412:   loss (6.0)
+|   |   |   |   |   |   |    opp_ast_PCT > 0.354412
+|   |   |   |   |   |   |   |    orb_pct <= 0.382536
+|   |   |   |   |   |   |   |   |    opp_orb_pct <= 0.255717:   win (2.0)
+|   |   |   |   |   |   |   |   |    opp_orb_pct > 0.255717:   loss (10.0/1.0)
+|   |   |   |   |   |   |   |    orb_pct > 0.382536
+|   |   |   |   |   |   |   |   |    Efg_pct <= 0.324201:   loss (3.0/1.0)
+|   |   |   |   |   |   |   |   |    Efg_pct > 0.324201:   win (20.0)
+|   |   |   |   |   |    opp_ft_rate > 0.263074
+|   |   |   |   |   |   |    ft_rate <= 0.537242
+|   |   |   |   |   |   |   |    Turnover_PCT <= 0.220096
+|   |   |   |   |   |   |   |   |    opp_ast_PCT <= 0.510294:   loss (4.0)
+|   |   |   |   |   |   |   |   |    opp_ast_PCT > 0.510294:   win (4.0)
+|   |   |   |   |   |   |   |    Turnover_PCT > 0.220096:   loss (50.0/1.0)
+|   |   |   |   |   |   |    ft_rate > 0.537242:   win (6.0/1.0)
+|   |   |   |   |    opp_Turnover_PCT > 0.602871
+|   |   |   |   |   |    orb_pct <= 0.409563
+|   |   |   |   |   |   |   opp_stl_PCT <= 0.290323:   win (7.0/1.0)
+|   |   |   |   |   |   |   opp_stl_PCT > 0.290323:   loss (4.0)
+|   |   |   |   |   |    orb_pct > 0.409563:   win (15.0)
+|   |   |   |    Turnover_PCT > 0.416268
+|   |   |   |   |    opp_orb_pct <= 0.212058
+|   |   |   |   |   |    opp_ft_rate <= 0.266244:   win (7.0/1.0)
+|   |   |   |   |   |    opp_ft_rate > 0.266244:   loss (7.0/1.0)
+|   |   |   |   |    opp_orb_pct > 0.212058
+|   |   |   |   |   |   stl_PCT <= 0.506912
+|   |   |   |   |   |   |    opp_Efg_pct <= 0.415525
+|   |   |   |   |   |   |   |    Efg_pct <= 0.392694:   loss (23.0)
+|   |   |   |   |   |   |   |    Efg_pct > 0.392694
+|   |   |   |   |   |   |   |   |    location=  home <= 0:   win (2.0)
+|   |   |   |   |   |   |   |   |    location=  home > 0:   loss (3.0/1.0)
+|   |   |   |   |   |   |    opp_Efg_pct > 0.415525:   loss (84.0)
+|   |   |   |   |   |   stl_PCT > 0.506912
+|   |   |   |   |   |   |    opp_ft_rate <= 0.244057:   win (4.0)
+|   |   |   |   |   |   |    opp_ft_rate > 0.244057:   loss (13.0/1.0)
+|   |    opp_Efg_pct > 0.550228:   loss (274.0/2.0)
+ Efg_pct > 0.415525
+|    opp_Efg_pct <= 0.511416
+|   |    opp_Efg_pct <= 0.388128
+|   |   |    Efg_pct <= 0.550228
+|   |   |   |    opp_Turnover_PCT <= 0.363636
+|   |   |   |   |    opp_Efg_pct <= 0.285388:   win (41.0/1.0)
+|   |   |   |   |    opp_Efg_pct > 0.285388
+|   |   |   |   |   |    opp_orb_pct <= 0.440748
+|   |   |   |   |   |   |    ast_PCT <= 0.589706:   win (32.0/1.0)
+|   |   |   |   |   |   |    ast_PCT > 0.589706
+|   |   |   |   |   |   |   |    Turnover_PCT <= 0.401914:   win (3.0)
+|   |   |   |   |   |   |   |    Turnover_PCT > 0.401914:   loss (5.0)
+|   |   |   |   |   |    opp_orb_pct > 0.440748
+|   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |    Efg_pct <= 0.52968:   loss (14.0)
+|   |   |   |   |   |   |   |    Efg_pct > 0.52968:   win (5.0/1.0)
+|   |   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |   |    opp_Efg_pct <= 0.36758:   win (6.0)
+|   |   |   |   |   |   |   |    opp_Efg_pct > 0.36758:   loss (3.0)
+|   |   |   |    opp_Turnover_PCT > 0.363636
+|   |   |   |   |    ft_rate <= 0.270998
+|   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |    opp_ft_rate <= 0.48019:   win (29.0)
+|   |   |   |   |   |   |    opp_ft_rate > 0.48019
+|   |   |   |   |   |   |   |    Turnover_PCT <= 0.478469:   win (6.0/1.0)
+|   |   |   |   |   |   |   |    Turnover_PCT > 0.478469:   loss (2.0)
+|   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |    opp_Efg_pct <= 0.349315:   win (33.0)
+|   |   |   |   |   |   |    opp_Efg_pct > 0.349315
+|   |   |   |   |   |   |   |    orb_pct <= 0.326403:   loss (3.0)
+|   |   |   |   |   |   |   |    orb_pct > 0.326403:   win (6.0)
+|   |   |   |   |    ft_rate > 0.270998:   win (107.0)
+|   |   |    Efg_pct > 0.550228:   win (219.0/1.0)
+|   |    opp_Efg_pct > 0.388128
+|   |   |    Efg_pct <= 0.573059
+|   |   |   |    opp_orb_pct <= 0.490644
+|   |   |   |   |    Turnover_PCT <= 0.535885
+|   |   |   |   |   |    opp_Turnover_PCT <= 0.535885
+|   |   |   |   |   |   |    orb_pct <= 0.349272
+|   |   |   |   |   |   |   |    ft_rate <= 0.285261
+|   |   |   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |   |   |    Efg_pct <= 0.504566:   loss (3.0)
+|   |   |   |   |   |   |   |   |   |    Efg_pct > 0.504566:   win (3.0)
+|   |   |   |   |   |   |   |   |    location=  home > 0:   loss (8.0)
+|   |   |   |   |   |   |   |    ft_rate > 0.285261
+|   |   |   |   |   |   |   |   |    opp_ft_rate <= 0.413629
+|   |   |   |   |   |   |   |   |   |    opp_ast_PCT <= 0.367647:   loss (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |    opp_ast_PCT > 0.367647:   win (18.0)
+|   |   |   |   |   |   |   |   |    opp_ft_rate > 0.413629
+|   |   |   |   |   |   |   |   |   |    ast_PCT <= 0.586765:   loss (5.0)
+|   |   |   |   |   |   |   |   |   |    ast_PCT > 0.586765:   win (2.0)
+|   |   |   |   |   |   |    orb_pct > 0.349272
+|   |   |   |   |   |   |   |    Efg_pct <= 0.429224
+|   |   |   |   |   |   |   |   |    location=  home <= 0:   win (3.0)
+|   |   |   |   |   |   |   |   |    location=  home > 0:   loss (6.0/1.0)
+|   |   |   |   |   |   |   |    Efg_pct > 0.429224:   win (52.0/1.0)
+|   |   |   |   |   |    opp_Turnover_PCT > 0.535885:   win (35.0)
+|   |   |   |   |    Turnover_PCT > 0.535885
+|   |   |   |   |   |    opp_Turnover_PCT <= 0.277512:   loss (10.0)
+|   |   |   |   |   |    opp_Turnover_PCT > 0.277512
+|   |   |   |   |   |   |    orb_pct <= 0.453222
+|   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.454545:   loss (14.0)
+|   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.454545
+|   |   |   |   |   |   |   |   |    opp_orb_pct <= 0.357588:   win (7.0)
+|   |   |   |   |   |   |   |   |    opp_orb_pct > 0.357588
+|   |   |   |   |   |   |   |   |   |    Turnover_PCT <= 0.588517:   win (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |    Turnover_PCT > 0.588517:   loss (6.0)
+|   |   |   |   |   |   |    orb_pct > 0.453222
+|   |   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.473684:   win (6.0)
+|   |   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.473684:   loss (2.0)
+|   |   |   |   |   |   |   |    location=  home > 0:   win (11.0)
+|   |   |   |    opp_orb_pct > 0.490644
+|   |   |   |   |    opp_Turnover_PCT <= 0.655502
+|   |   |   |   |   |    Turnover_PCT <= 0.349282
+|   |   |   |   |   |   |    blk_PCT <= 0.164122:   loss (5.0)
+|   |   |   |   |   |   |    blk_PCT > 0.164122
+|   |   |   |   |   |   |   |    opp_Efg_pct <= 0.465753
+|   |   |   |   |   |   |   |   |    opp_ft_rate <= 0.611727:   win (15.0)
+|   |   |   |   |   |   |   |   |    opp_ft_rate > 0.611727:   loss (2.0)
+|   |   |   |   |   |   |   |    opp_Efg_pct > 0.465753
+|   |   |   |   |   |   |   |   |    opp_ft_rate <= 0.415214:   loss (5.0)
+|   |   |   |   |   |   |   |   |    opp_ft_rate > 0.415214:   win (2.0)
+|   |   |   |   |   |    Turnover_PCT > 0.349282
+|   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |    opp_orb_pct <= 0.555094
+|   |   |   |   |   |   |   |   |    opp_Efg_pct <= 0.399543:   win (2.0)
+|   |   |   |   |   |   |   |   |    opp_Efg_pct > 0.399543
+|   |   |   |   |   |   |   |   |   |   stl_PCT <= 0.410138:   loss (10.0)
+|   |   |   |   |   |   |   |   |   |   stl_PCT > 0.410138
+|   |   |   |   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.416268:   loss (2.0)
+|   |   |   |   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.416268:   win (2.0)
+|   |   |   |   |   |   |   |    opp_orb_pct > 0.555094:   loss (22.0)
+|   |   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |   |    ft_rate <= 0.345483:   loss (12.0/1.0)
+|   |   |   |   |   |   |   |    ft_rate > 0.345483
+|   |   |   |   |   |   |   |   |    opp_Efg_pct <= 0.493151:   win (5.0)
+|   |   |   |   |   |   |   |   |    opp_Efg_pct > 0.493151:   loss (2.0)
+|   |   |   |   |    opp_Turnover_PCT > 0.655502:   win (11.0/1.0)
+|   |   |    Efg_pct > 0.573059
+|   |   |   |    Turnover_PCT <= 0.674641
+|   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   stl_PCT <= 0.313364
+|   |   |   |   |   |   |    opp_ast_PCT <= 0.558824:   win (8.0)
+|   |   |   |   |   |   |    opp_ast_PCT > 0.558824
+|   |   |   |   |   |   |   |    opp_orb_pct <= 0.349272:   win (3.0)
+|   |   |   |   |   |   |   |    opp_orb_pct > 0.349272:   loss (5.0/1.0)
+|   |   |   |   |   |   stl_PCT > 0.313364:   win (49.0)
+|   |   |   |   |    location=  home > 0:   win (104.0/1.0)
+|   |   |   |    Turnover_PCT > 0.674641
+|   |   |   |   |    Turnover_PCT <= 0.755981
+|   |   |   |   |   |    opp_ft_rate <= 0.305864:   loss (2.0)
+|   |   |   |   |   |    opp_ft_rate > 0.305864
+|   |   |   |   |   |   |    opp_orb_pct <= 0.725572:   win (9.0)
+|   |   |   |   |   |   |    opp_orb_pct > 0.725572:   loss (2.0)
+|   |   |   |   |    Turnover_PCT > 0.755981:   loss (5.0)
+|    opp_Efg_pct > 0.511416
+|   |    Efg_pct <= 0.591324
+|   |   |    opp_Turnover_PCT <= 0.645933
+|   |   |   |    orb_pct <= 0.621622
+|   |   |   |   |    Turnover_PCT <= 0.435407
+|   |   |   |   |   |    opp_Efg_pct <= 0.573059
+|   |   |   |   |   |   |    orb_pct <= 0.505198
+|   |   |   |   |   |   |   |    opp_orb_pct <= 0.519751
+|   |   |   |   |   |   |   |   |    opp_ft_rate <= 0.461173
+|   |   |   |   |   |   |   |   |   |    ft_rate <= 0.461173
+|   |   |   |   |   |   |   |   |   |   |   stl_PCT <= 0.382488
+|   |   |   |   |   |   |   |   |   |   |   |    ast_PCT <= 0.641176
+|   |   |   |   |   |   |   |   |   |   |   |   |    opp_orb_pct <= 0.461538:   loss (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |    opp_orb_pct > 0.461538:   win (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |    ast_PCT > 0.641176:   win (2.0)
+|   |   |   |   |   |   |   |   |   |   |   stl_PCT > 0.382488:   win (5.0)
+|   |   |   |   |   |   |   |   |   |    ft_rate > 0.461173:   win (8.0)
+|   |   |   |   |   |   |   |   |    opp_ft_rate > 0.461173:   loss (6.0)
+|   |   |   |   |   |   |   |    opp_orb_pct > 0.519751:   loss (15.0)
+|   |   |   |   |   |   |    orb_pct > 0.505198:   win (6.0)
+|   |   |   |   |   |    opp_Efg_pct > 0.573059
+|   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |   stl_PCT <= 0.170507
+|   |   |   |   |   |   |   |   |    ast_PCT <= 0.376471:   win (2.0)
+|   |   |   |   |   |   |   |   |    ast_PCT > 0.376471:   loss (5.0)
+|   |   |   |   |   |   |   |   stl_PCT > 0.170507:   loss (40.0)
+|   |   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |   |    Turnover_PCT <= 0.057416:   win (2.0)
+|   |   |   |   |   |   |   |    Turnover_PCT > 0.057416:   loss (34.0/3.0)
+|   |   |   |   |    Turnover_PCT > 0.435407:   loss (129.0)
+|   |   |   |    orb_pct > 0.621622
+|   |   |   |   |    opp_Efg_pct <= 0.627854
+|   |   |   |   |   |    ast_PCT <= 0.395588:   loss (4.0)
+|   |   |   |   |   |    ast_PCT > 0.395588
+|   |   |   |   |   |   |    location=  home <= 0
+|   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.373206:   loss (3.0)
+|   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.373206:   win (4.0)
+|   |   |   |   |   |   |    location=  home > 0
+|   |   |   |   |   |   |   |    Efg_pct <= 0.454338
+|   |   |   |   |   |   |   |   |    Efg_pct <= 0.442922:   win (3.0)
+|   |   |   |   |   |   |   |   |    Efg_pct > 0.442922:   loss (2.0)
+|   |   |   |   |   |   |   |    Efg_pct > 0.454338:   win (13.0)
+|   |   |   |   |    opp_Efg_pct > 0.627854
+|   |   |   |   |   |    Efg_pct <= 0.559361:   loss (12.0)
+|   |   |   |   |   |    Efg_pct > 0.559361
+|   |   |   |   |   |   |    Efg_pct <= 0.568493:   win (2.0)
+|   |   |   |   |   |   |    Efg_pct > 0.568493:   loss (2.0)
+|   |   |    opp_Turnover_PCT > 0.645933
+|   |   |   |    opp_Efg_pct <= 0.703196
+|   |   |   |   |    Turnover_PCT <= 0.645933
+|   |   |   |   |   |    orb_pct <= 0.403326
+|   |   |   |   |   |   |    Efg_pct <= 0.502283:   loss (5.0/1.0)
+|   |   |   |   |   |   |    Efg_pct > 0.502283:   win (6.0)
+|   |   |   |   |   |    orb_pct > 0.403326:   win (23.0)
+|   |   |   |   |    Turnover_PCT > 0.645933:   loss (3.0)
+|   |   |   |    opp_Efg_pct > 0.703196
+|   |   |   |   |    orb_pct <= 0.588358:   loss (10.0)
+|   |   |   |   |    orb_pct > 0.588358:   win (3.0/1.0)
+|   |    Efg_pct > 0.591324
+|   |   |    opp_Efg_pct <= 0.671233
+|   |   |   |    opp_orb_pct <= 0.634096
+|   |   |   |   |    Turnover_PCT <= 0.62201
+|   |   |   |   |   |    orb_pct <= 0.376299
+|   |   |   |   |   |   |    Efg_pct <= 0.621005
+|   |   |   |   |   |   |   |    opp_Efg_pct <= 0.591324
+|   |   |   |   |   |   |   |   |    opp_ast_PCT <= 0.447059:   loss (2.0)
+|   |   |   |   |   |   |   |   |    opp_ast_PCT > 0.447059:   win (5.0)
+|   |   |   |   |   |   |   |    opp_Efg_pct > 0.591324:   loss (3.0)
+|   |   |   |   |   |   |    Efg_pct > 0.621005
+|   |   |   |   |   |   |   |    opp_Turnover_PCT <= 0.263158:   loss (3.0/1.0)
+|   |   |   |   |   |   |   |    opp_Turnover_PCT > 0.263158:   win (21.0)
+|   |   |   |   |   |    orb_pct > 0.376299:   win (52.0/1.0)
+|   |   |   |   |    Turnover_PCT > 0.62201
+|   |   |   |   |   |    opp_orb_pct <= 0.370062:   win (6.0/1.0)
+|   |   |   |   |   |    opp_orb_pct > 0.370062:   loss (7.0)
+|   |   |   |    opp_orb_pct > 0.634096
+|   |   |   |   |    Efg_pct <= 0.805936:   loss (10.0/1.0)
+|   |   |   |   |    Efg_pct > 0.805936:   win (2.0)
+|   |   |    opp_Efg_pct > 0.671233
+|   |   |   |    orb_pct <= 0.546778:   loss (16.0/1.0)
+|   |   |   |    orb_pct > 0.546778:   win (2.0)
+
+Number of Leaves  : 	163
+
+Size of the tree : 	325
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2180               81.7704 %
+Incorrectly Classified Instances       486               18.2296 %
+Kappa statistic                          0.6354
+Mean absolute error                      0.1888
+Root mean squared error                  0.4138
+Relative absolute error                 37.7601 %
+Root relative squared error             82.7634 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.818    0.182    0.818      0.818    0.818      0.635    0.822     0.770       loss
+                 0.818    0.182    0.818      0.818    0.818      0.635    0.822     0.781       win
+Weighted Avg.    0.818    0.182    0.818      0.818    0.818      0.635    0.822     0.776     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1090  243 |    a =   loss
+  243 1090 |    b =   win
+

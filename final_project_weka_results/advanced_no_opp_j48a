@@ -1,0 +1,127 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -R -N 3 -Q 1 -M 2
+Relation:     2016_advanced_statistics-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   9
+                Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location
+               ast_PCT
+               stl_PCT
+               blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+  Efg_pct <= 0.415525
+|     Efg_pct <= 0.315068:  loss (336.0/52.0)
+|     Efg_pct > 0.315068
+|   |    orb_pct <= 0.324324
+|   |   |    ft_rate <= 0.183835:  loss (22.0)
+|   |   |    ft_rate > 0.183835
+|   |   |   |    Turnover_PCT <= 0.397129
+|   |   |   |   |    ft_rate <= 0.353407:  loss (22.0/5.0)
+|   |   |   |   |    ft_rate > 0.353407
+|   |   |   |   |   |    ft_rate <= 0.465927:  win (13.0/2.0)
+|   |   |   |   |   |    ft_rate > 0.465927:  loss (3.0)
+|   |   |   |    Turnover_PCT > 0.397129
+|   |   |   |   |    location =  away:  loss (29.0/3.0)
+|   |   |   |   |    location =  home
+|   |   |   |   |   |    blk_PCT <= 0.587786:  loss (22.0/2.0)
+|   |   |   |   |   |    blk_PCT > 0.587786:  win (2.0)
+|   |    orb_pct > 0.324324
+|   |   |     Efg_pct <= 0.363014
+|   |   |   |    Turnover_PCT <= 0.406699:  loss (73.0/31.0)
+|   |   |   |    Turnover_PCT > 0.406699
+|   |   |   |   |    orb_pct <= 0.419958:  loss (24.0)
+|   |   |   |   |    orb_pct > 0.419958
+|   |   |   |   |   |    location =  away:  loss (37.0/7.0)
+|   |   |   |   |   |    location =  home
+|   |   |   |   |   |   |     Efg_pct <= 0.328767:  loss (7.0)
+|   |   |   |   |   |   |     Efg_pct > 0.328767
+|   |   |   |   |   |   |   |     Efg_pct <= 0.344749:  win (10.0/3.0)
+|   |   |   |   |   |   |   |     Efg_pct > 0.344749:  loss (11.0/2.0)
+|   |   |     Efg_pct > 0.363014
+|   |   |   |    location =  away
+|   |   |   |   |    ast_PCT <= 0.552941:  loss (66.0/21.0)
+|   |   |   |   |    ast_PCT > 0.552941:  win (37.0/14.0)
+|   |   |   |    location =  home
+|   |   |   |   |    ast_PCT <= 0.494118
+|   |   |   |   |   |    ast_PCT <= 0.361765
+|   |   |   |   |   |   |    orb_pct <= 0.621622:  win (14.0/2.0)
+|   |   |   |   |   |   |    orb_pct > 0.621622:  loss (4.0)
+|   |   |   |   |   |    ast_PCT > 0.361765:  loss (26.0/7.0)
+|   |   |   |   |    ast_PCT > 0.494118:  win (49.0/13.0)
+  Efg_pct > 0.415525
+|     Efg_pct <= 0.559361
+|   |    blk_PCT <= 0.412214
+|   |   |    location =  away
+|   |   |   |    ft_rate <= 0.223455:  loss (51.0/9.0)
+|   |   |   |    ft_rate > 0.223455
+|   |   |   |   |    Turnover_PCT <= 0.401914
+|   |   |   |   |   |    ast_PCT <= 0.689706
+|   |   |   |   |   |   |     Efg_pct <= 0.440639
+|   |   |   |   |   |   |   |    orb_pct <= 0.336798:  win (2.0)
+|   |   |   |   |   |   |   |    orb_pct > 0.336798:  loss (12.0/2.0)
+|   |   |   |   |   |   |     Efg_pct > 0.440639:  win (52.0/17.0)
+|   |   |   |   |   |    ast_PCT > 0.689706:  win (9.0)
+|   |   |   |   |    Turnover_PCT > 0.401914:  loss (105.0/43.0)
+|   |   |    location =  home
+|   |   |   |    stl_PCT <= 0.460829:  win (156.0/73.0)
+|   |   |   |    stl_PCT > 0.460829
+|   |   |   |   |    ast_PCT <= 0.622059
+|   |   |   |   |   |    ast_PCT <= 0.458824:  win (13.0)
+|   |   |   |   |   |    ast_PCT > 0.458824
+|   |   |   |   |   |   |    Turnover_PCT <= 0.277512:  win (5.0)
+|   |   |   |   |   |   |    Turnover_PCT > 0.277512
+|   |   |   |   |   |   |   |    orb_pct <= 0.370062:  loss (9.0/2.0)
+|   |   |   |   |   |   |   |    orb_pct > 0.370062:  win (11.0/3.0)
+|   |   |   |   |    ast_PCT > 0.622059:  win (18.0)
+|   |    blk_PCT > 0.412214:  win (148.0/28.0)
+|     Efg_pct > 0.559361
+|   |    Turnover_PCT <= 0.712919:  win (352.0/48.0)
+|   |    Turnover_PCT > 0.712919
+|   |   |     Efg_pct <= 0.678082
+|   |   |   |    orb_pct <= 0.399168:  loss (11.0/1.0)
+|   |   |   |    orb_pct > 0.399168:  win (9.0/3.0)
+|   |   |     Efg_pct > 0.678082:  win (8.0)
+
+Number of Leaves  : 	37
+
+Size of the tree : 	73
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1847               69.2798 %
+Incorrectly Classified Instances       819               30.7202 %
+Kappa statistic                          0.3856
+Mean absolute error                      0.3691
+Root mean squared error                  0.4545
+Relative absolute error                 73.8262 %
+Root relative squared error             90.9018 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.728    0.343    0.680      0.728    0.703      0.387    0.755     0.731      loss
+                 0.657    0.272    0.708      0.657    0.681      0.387    0.755     0.738      win
+Weighted Avg.    0.693    0.307    0.694      0.693    0.692      0.387    0.755     0.734     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 971 362 |   a =  loss
+ 457 876 |   b =  win
+

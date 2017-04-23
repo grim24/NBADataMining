@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2016_results_opp_team-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-R5-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   9
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.10027306678571599
+    Node 2    8.94371392134971
+    Node 3    6.012271969712849
+    Node 4    7.833380174632287
+    Node 5    -8.097725457640495
+    Node 6    -8.345074465319192
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.1002731933204968
+    Node 2    -8.943704946549003
+    Node 3    -6.012269548113879
+    Node 4    -7.8333800259183155
+    Node 5    8.097722601851371
+    Node 6    8.345070224851439
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.108205640280258
+    Attrib  Efg_pct    -5.4195178768847505
+    Attrib  Turnover_PCT    2.7916275233038954
+    Attrib  orb_pct    -2.4631098988407265
+    Attrib  ft_rate    -5.487780924897151
+    Attrib  opp_Efg_pct    5.8968041586193705
+    Attrib  opp_Turnover_PCT    -3.4306677355068187
+    Attrib  opp_orb_pct    12.066481007501286
+    Attrib  opp_ft_rate    6.437904493501108
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    2.6242047642397726
+    Attrib  Efg_pct    -11.985198793100265
+    Attrib  Turnover_PCT    9.347291330170243
+    Attrib  orb_pct    -3.8588317343633807
+    Attrib  ft_rate    -1.6973403303533527
+    Attrib  opp_Efg_pct    24.794984891449687
+    Attrib  opp_Turnover_PCT    -8.462346825140324
+    Attrib  opp_orb_pct    7.335061643371828
+    Attrib  opp_ft_rate    10.183265348827959
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.402849605887807
+    Attrib  Efg_pct    -17.57785621413789
+    Attrib  Turnover_PCT    5.918089721267071
+    Attrib  orb_pct    -6.374151856959616
+    Attrib  ft_rate    -6.060472168623848
+    Attrib  opp_Efg_pct    13.488719004285443
+    Attrib  opp_Turnover_PCT    -5.441551219462485
+    Attrib  opp_orb_pct    2.666816352608263
+    Attrib  opp_ft_rate    6.252731551256951
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.83740314478141
+    Attrib  Efg_pct    11.514488030985223
+    Attrib  Turnover_PCT    -4.126015316809522
+    Attrib  orb_pct    6.218576187994433
+    Attrib  ft_rate    6.046576397862844
+    Attrib  opp_Efg_pct    -15.505205099439111
+    Attrib  opp_Turnover_PCT    2.7168684888663446
+    Attrib  opp_orb_pct    -7.568001534858442
+    Attrib  opp_ft_rate    -8.696293232612309
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.6179909756793296
+    Attrib  Efg_pct    21.539350143395545
+    Attrib  Turnover_PCT    -7.2148603167352965
+    Attrib  orb_pct    6.621058291301491
+    Attrib  ft_rate    6.213895087709875
+    Attrib  opp_Efg_pct    -12.932931929735489
+    Attrib  opp_Turnover_PCT    8.245324531277971
+    Attrib  opp_orb_pct    -3.3680531653283947
+    Attrib  opp_ft_rate    -0.8763271965493618
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Time taken to build model: 1.71 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2527               94.7862 %
+Incorrectly Classified Instances       139                5.2138 %
+Kappa statistic                          0.8957
+Mean absolute error                      0.062 
+Root mean squared error                  0.1969
+Relative absolute error                 12.395  %
+Root relative squared error             39.3886 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.949    0.053    0.947      0.949    0.948      0.896    0.990     0.990       loss
+                 0.947    0.051    0.949      0.947    0.948      0.896    0.990     0.989       win
+Weighted Avg.    0.948    0.052    0.948      0.948    0.948      0.896    0.990     0.990     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1265   68 |    a =   loss
+   71 1262 |    b =   win
+

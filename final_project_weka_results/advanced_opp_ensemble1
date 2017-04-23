@@ -1,0 +1,324 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.meta.CVParameterSelection -- -X 10 -S 1 -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     2016_advanced_results_opp_team-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   16
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location=  home
+               ast_PCT
+              stl_PCT
+               blk_PCT
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               opp_ast_PCT
+              opp_stl_PCT
+               opp_blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        10.7736 * (normalized)  Efg_pct
+ +      -4.5333 * (normalized)  Turnover_PCT
+ +       3.6447 * (normalized)  orb_pct
+ +       3.2784 * (normalized)  ft_rate
+ +       0.0286 * (normalized)  location=  home
+ +       0.2393 * (normalized)  ast_PCT
+ +       0.023  * (normalized) stl_PCT
+ +      -0.3623 * (normalized)  blk_PCT
+ +     -10.8162 * (normalized)  opp_Efg_pct
+ +       4.5705 * (normalized)  opp_Turnover_PCT
+ +      -3.5547 * (normalized)  opp_orb_pct
+ +      -3.5399 * (normalized)  opp_ft_rate
+ +      -0.0824 * (normalized)  opp_ast_PCT
+ +      -0.1743 * (normalized) opp_stl_PCT
+ +       0.5213 * (normalized)  opp_blk_PCT
+ -       0.058 
+
+Number of kernel evaluations: 429065 (75.49% cached)
+
+
+
+Weight: 3.14
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.4609 * (normalized)  Efg_pct
+ +       0.0752 * (normalized)  Turnover_PCT
+ +       2.4351 * (normalized)  orb_pct
+ +       2.8877 * (normalized)  ft_rate
+ +      -0.4306 * (normalized)  location=  home
+ +       0.0294 * (normalized)  ast_PCT
+ +       3.0384 * (normalized) stl_PCT
+ +       0.6668 * (normalized)  blk_PCT
+ +      -6.9499 * (normalized)  opp_Efg_pct
+ +      -0.2024 * (normalized)  opp_Turnover_PCT
+ +      -3.4012 * (normalized)  opp_orb_pct
+ +      -2.1263 * (normalized)  opp_ft_rate
+ +      -0.5763 * (normalized)  opp_ast_PCT
+ +      -2.3425 * (normalized) opp_stl_PCT
+ +      -1.4762 * (normalized)  opp_blk_PCT
+ +       0.2703
+
+Number of kernel evaluations: 458737 (70.431% cached)
+
+
+
+Weight: 1.09
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         4.9884 * (normalized)  Efg_pct
+ +      -2.4111 * (normalized)  Turnover_PCT
+ +       2.7497 * (normalized)  orb_pct
+ +      -0.2637 * (normalized)  ft_rate
+ +       0.3082 * (normalized)  location=  home
+ +      -1.2509 * (normalized)  ast_PCT
+ +      -1.6512 * (normalized) stl_PCT
+ +       0.204  * (normalized)  blk_PCT
+ +      -5.6265 * (normalized)  opp_Efg_pct
+ +       3.8326 * (normalized)  opp_Turnover_PCT
+ +      -2.2159 * (normalized)  opp_orb_pct
+ +      -0.9191 * (normalized)  opp_ft_rate
+ +      -0.7219 * (normalized)  opp_ast_PCT
+ +       0.3141 * (normalized) opp_stl_PCT
+ +       1.3557 * (normalized)  opp_blk_PCT
+ +       1.022 
+
+Number of kernel evaluations: 467448 (77.384% cached)
+
+
+
+Weight: 0.7
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.7237 * (normalized)  Efg_pct
+ +      -2.1249 * (normalized)  Turnover_PCT
+ +       2.2362 * (normalized)  orb_pct
+ +       1.4645 * (normalized)  ft_rate
+ +      -0.1693 * (normalized)  location=  home
+ +       0.8569 * (normalized)  ast_PCT
+ +       0.992  * (normalized) stl_PCT
+ +      -0.0708 * (normalized)  blk_PCT
+ +      -3.0739 * (normalized)  opp_Efg_pct
+ +       0.5698 * (normalized)  opp_Turnover_PCT
+ +      -1.664  * (normalized)  opp_orb_pct
+ +      -0.9902 * (normalized)  opp_ft_rate
+ +       0.3868 * (normalized)  opp_ast_PCT
+ +       0.3576 * (normalized) opp_stl_PCT
+ +      -1.0253 * (normalized)  opp_blk_PCT
+ -       1.2418
+
+Number of kernel evaluations: 354278 (68.642% cached)
+
+
+
+Weight: 0.45
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.1972 * (normalized)  Efg_pct
+ +      -0.4535 * (normalized)  Turnover_PCT
+ +      -0.1227 * (normalized)  orb_pct
+ +       0.1529 * (normalized)  ft_rate
+ +      -0.0212 * (normalized)  location=  home
+ +       0.1952 * (normalized)  ast_PCT
+ +      -0.052  * (normalized) stl_PCT
+ +       0.1636 * (normalized)  blk_PCT
+ +      -3.4826 * (normalized)  opp_Efg_pct
+ +       1.8571 * (normalized)  opp_Turnover_PCT
+ +      -2.7999 * (normalized)  opp_orb_pct
+ +      -1.3732 * (normalized)  opp_ft_rate
+ +       0.1889 * (normalized)  opp_ast_PCT
+ +      -1.6438 * (normalized) opp_stl_PCT
+ +      -1.324  * (normalized)  opp_blk_PCT
+ +       3.5324
+
+Number of kernel evaluations: 357344 (77.351% cached)
+
+
+
+Weight: 0.32
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         2.2137 * (normalized)  Efg_pct
+ +      -0.0382 * (normalized)  Turnover_PCT
+ +       0.3327 * (normalized)  orb_pct
+ +       2.7212 * (normalized)  ft_rate
+ +       0.581  * (normalized)  location=  home
+ +       0.9784 * (normalized)  ast_PCT
+ +       1.6012 * (normalized) stl_PCT
+ +       1.1653 * (normalized)  blk_PCT
+ +      -2.6815 * (normalized)  opp_Efg_pct
+ +       1.121  * (normalized)  opp_Turnover_PCT
+ +      -0.7685 * (normalized)  opp_orb_pct
+ +      -0.7986 * (normalized)  opp_ft_rate
+ +       0.2456 * (normalized)  opp_ast_PCT
+ +      -0.472  * (normalized) opp_stl_PCT
+ +       0.7981 * (normalized)  opp_blk_PCT
+ -       3.2371
+
+Number of kernel evaluations: 405954 (70.778% cached)
+
+
+
+Weight: 0.22
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.3914 * (normalized)  Efg_pct
+ +      -2.0565 * (normalized)  Turnover_PCT
+ +       0.2122 * (normalized)  orb_pct
+ +      -0.0009 * (normalized)  ft_rate
+ +       0.3073 * (normalized)  location=  home
+ +       0.6017 * (normalized)  ast_PCT
+ +      -1.2522 * (normalized) stl_PCT
+ +       0.047  * (normalized)  blk_PCT
+ +      -3.4523 * (normalized)  opp_Efg_pct
+ +       0.8946 * (normalized)  opp_Turnover_PCT
+ +      -0.055  * (normalized)  opp_orb_pct
+ +      -0.0333 * (normalized)  opp_ft_rate
+ +       0.4853 * (normalized)  opp_ast_PCT
+ +      -0.8506 * (normalized) opp_stl_PCT
+ +       0.0217 * (normalized)  opp_blk_PCT
+ +       2.4878
+
+Number of kernel evaluations: 442782 (77.237% cached)
+
+
+
+Weight: 0.09
+
+Number of performed Iterations: 7
+
+
+Time taken to build model: 0.81 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2538               95.1988 %
+Incorrectly Classified Instances       128                4.8012 %
+Kappa statistic                          0.904 
+Mean absolute error                      0.0564
+Root mean squared error                  0.2067
+Relative absolute error                 11.2791 %
+Root relative squared error             41.3343 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.047    0.953      0.950    0.952      0.904    0.985     0.985       loss
+                 0.953    0.050    0.951      0.953    0.952      0.904    0.985     0.983       win
+Weighted Avg.    0.952    0.048    0.952      0.952    0.952      0.904    0.985     0.984     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1267   66 |    a =   loss
+   62 1271 |    b =   win
+

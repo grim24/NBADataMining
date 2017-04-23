@@ -1,0 +1,938 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2016_advanced_results_opp_team-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   16
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location=  home
+               ast_PCT
+              stl_PCT
+               blk_PCT
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               opp_ast_PCT
+              opp_stl_PCT
+               opp_blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.115277772718591
+    Node 2    11.720300979853066
+    Node 3    14.80476285392663
+    Node 4    -12.462031620026265
+    Node 5    -14.353608481956167
+    Node 6    15.033451564856804
+    Node 7    -14.74789307432456
+    Node 8    -10.231615952889529
+    Node 9    -11.173159288020019
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.115285154653151
+    Node 2    -11.720313267976685
+    Node 3    -14.804779410349889
+    Node 4    12.462044252062688
+    Node 5    14.35362345276632
+    Node 6    -15.033466813093463
+    Node 7    14.74790884902977
+    Node 8    10.231627019800415
+    Node 9    11.173170492433263
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.011719375930526
+    Attrib  Efg_pct    -8.441769556639532
+    Attrib  Turnover_PCT    4.183724133233387
+    Attrib  orb_pct    5.568412274966732
+    Attrib  ft_rate    1.6839830293236477
+    Attrib  location=  home    0.975814088263955
+    Attrib  ast_PCT    -2.740491670202373
+    Attrib stl_PCT    -4.877789474410259
+    Attrib  blk_PCT    -4.431388242069087
+    Attrib  opp_Efg_pct    5.665425123737991
+    Attrib  opp_Turnover_PCT    -4.114350258411529
+    Attrib  opp_orb_pct    -5.132128096390789
+    Attrib  opp_ft_rate    5.25832022379005
+    Attrib  opp_ast_PCT    -6.70791477483161
+    Attrib opp_stl_PCT    2.4018998445514272
+    Attrib  opp_blk_PCT    -7.605087152795938
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.48610304805694465
+    Attrib  Efg_pct    0.5132017457080386
+    Attrib  Turnover_PCT    8.761014245699945
+    Attrib  orb_pct    -2.3344341166908174
+    Attrib  ft_rate    0.6876566295307747
+    Attrib  location=  home    -1.752840748088976
+    Attrib  ast_PCT    -2.0655854217515297
+    Attrib stl_PCT    8.379585006192013
+    Attrib  blk_PCT    10.570506241953742
+    Attrib  opp_Efg_pct    8.559854677387792
+    Attrib  opp_Turnover_PCT    -12.469031301025495
+    Attrib  opp_orb_pct    3.309096461131846
+    Attrib  opp_ft_rate    1.3391490717421806
+    Attrib  opp_ast_PCT    -0.6740479630211736
+    Attrib opp_stl_PCT    3.587501088346831
+    Attrib  opp_blk_PCT    -0.68555532956437
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -6.841902927992047
+    Attrib  Efg_pct    12.888754700736495
+    Attrib  Turnover_PCT    -0.6974048332237236
+    Attrib  orb_pct    -2.134092053716898
+    Attrib  ft_rate    1.649473867970749
+    Attrib  location=  home    -3.618707334052436
+    Attrib  ast_PCT    -8.678685222397995
+    Attrib stl_PCT    8.032369997293431
+    Attrib  blk_PCT    0.3777170634146853
+    Attrib  opp_Efg_pct    -14.863428853871412
+    Attrib  opp_Turnover_PCT    1.613254306229526
+    Attrib  opp_orb_pct    -8.012271382132646
+    Attrib  opp_ft_rate    -8.804875135474823
+    Attrib  opp_ast_PCT    -2.466526996273026
+    Attrib opp_stl_PCT    -0.21572612028776036
+    Attrib  opp_blk_PCT    0.12725492281799392
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.6796554541659
+    Attrib  Efg_pct    16.056988184343634
+    Attrib  Turnover_PCT    -8.515846279062204
+    Attrib  orb_pct    7.555208193765107
+    Attrib  ft_rate    8.769204334592748
+    Attrib  location=  home    -2.3585438626569943
+    Attrib  ast_PCT    1.0474361247729918
+    Attrib stl_PCT    0.8000116336639812
+    Attrib  blk_PCT    0.017867639473748177
+    Attrib  opp_Efg_pct    -22.987406749954634
+    Attrib  opp_Turnover_PCT    0.03264782965819876
+    Attrib  opp_orb_pct    -5.100729651429323
+    Attrib  opp_ft_rate    -11.041218880450296
+    Attrib  opp_ast_PCT    0.15469880873070863
+    Attrib opp_stl_PCT    2.0566057184152853
+    Attrib  opp_blk_PCT    -3.248075120417789
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.38388182981325486
+    Attrib  Efg_pct    -28.253191180884684
+    Attrib  Turnover_PCT    8.01346099366478
+    Attrib  orb_pct    -6.403503139388398
+    Attrib  ft_rate    -6.101587967839719
+    Attrib  location=  home    0.008919915879192658
+    Attrib  ast_PCT    2.5072861449520265
+    Attrib stl_PCT    1.1184082962126525
+    Attrib  blk_PCT    0.6489944069289263
+    Attrib  opp_Efg_pct    25.177460212026016
+    Attrib  opp_Turnover_PCT    -16.37180889928241
+    Attrib  opp_orb_pct    9.048142967794588
+    Attrib  opp_ft_rate    6.300551408047661
+    Attrib  opp_ast_PCT    0.4214845934761673
+    Attrib opp_stl_PCT    1.32144088897319
+    Attrib  opp_blk_PCT    -4.117173805547411
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -6.962683825786207
+    Attrib  Efg_pct    11.229571438969776
+    Attrib  Turnover_PCT    -15.768301585798252
+    Attrib  orb_pct    8.94314225212531
+    Attrib  ft_rate    2.4364838727088256
+    Attrib  location=  home    -3.710245253114731
+    Attrib  ast_PCT    8.336047537926927
+    Attrib stl_PCT    1.4636156937553744
+    Attrib  blk_PCT    -4.362399994624696
+    Attrib  opp_Efg_pct    -10.14878541351855
+    Attrib  opp_Turnover_PCT    6.2110867274758315
+    Attrib  opp_orb_pct    -6.585321264794992
+    Attrib  opp_ft_rate    0.6740670229247548
+    Attrib  opp_ast_PCT    -0.8865420926645743
+    Attrib opp_stl_PCT    2.8188883094785395
+    Attrib  opp_blk_PCT    -5.8311901003676905
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.065702438684706
+    Attrib  Efg_pct    5.769479674305792
+    Attrib  Turnover_PCT    6.822917088657795
+    Attrib  orb_pct    14.455802039893612
+    Attrib  ft_rate    7.446987103814022
+    Attrib  location=  home    6.315405339177482
+    Attrib  ast_PCT    -8.13900967473106
+    Attrib stl_PCT    -2.675332160502075
+    Attrib  blk_PCT    0.22935026595917368
+    Attrib  opp_Efg_pct    -3.77857553590709
+    Attrib  opp_Turnover_PCT    1.4280533888720934
+    Attrib  opp_orb_pct    -3.4119877886516456
+    Attrib  opp_ft_rate    -10.538839881164028
+    Attrib  opp_ast_PCT    -6.1105488363265055
+    Attrib opp_stl_PCT    0.9243437165902498
+    Attrib  opp_blk_PCT    -0.7721179967857011
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    4.107495455389485
+    Attrib  Efg_pct    8.576105868853194
+    Attrib  Turnover_PCT    -0.9441706975980221
+    Attrib  orb_pct    8.163850086008734
+    Attrib  ft_rate    13.818651488237254
+    Attrib  location=  home    6.841345097152366
+    Attrib  ast_PCT    6.041834542044215
+    Attrib stl_PCT    -3.968586317917211
+    Attrib  blk_PCT    3.3253892225632606
+    Attrib  opp_Efg_pct    -13.132073365613227
+    Attrib  opp_Turnover_PCT    -4.0569919280475455
+    Attrib  opp_orb_pct    -1.7277024471112146
+    Attrib  opp_ft_rate    3.848052113320234
+    Attrib  opp_ast_PCT    -2.6307454612576553
+    Attrib opp_stl_PCT    -5.53302275116651
+    Attrib  opp_blk_PCT    -5.42226548104607
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Weight: 3.75
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    22.034671731090725
+    Node 2    -16.727594935617816
+    Node 3    -3.8983692264624645
+    Node 4    -9.762967760667827
+    Node 5    -10.607700599678134
+    Node 6    -13.082382689258102
+    Node 7    -14.764765644746719
+    Node 8    -9.085805529313651
+    Node 9    -10.509063228786
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -22.034533674134146
+    Node 2    16.72748954858292
+    Node 3    3.8983634618225436
+    Node 4    9.762919196056293
+    Node 5    10.60765375370333
+    Node 6    13.082188315284709
+    Node 7    14.764704072085337
+    Node 8    9.0857552752438
+    Node 9    10.508989028319974
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.811277008755951
+    Attrib  Efg_pct    30.41196373050784
+    Attrib  Turnover_PCT    -12.029596877821955
+    Attrib  orb_pct    8.110586394788113
+    Attrib  ft_rate    19.67404573470056
+    Attrib  location=  home    13.205964329710543
+    Attrib  ast_PCT    2.423284490450891
+    Attrib stl_PCT    12.456738975087857
+    Attrib  blk_PCT    -1.6641250005261141
+    Attrib  opp_Efg_pct    -20.11646288838911
+    Attrib  opp_Turnover_PCT    10.09119152166518
+    Attrib  opp_orb_pct    -2.5673414017133256
+    Attrib  opp_ft_rate    -15.628698994012455
+    Attrib  opp_ast_PCT    -0.9188462950536572
+    Attrib opp_stl_PCT    -25.549233808812055
+    Attrib  opp_blk_PCT    -15.117928078234662
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.8495851838338154
+    Attrib  Efg_pct    23.8874310836726
+    Attrib  Turnover_PCT    -7.510778322227868
+    Attrib  orb_pct    26.876714219574477
+    Attrib  ft_rate    25.851699730521595
+    Attrib  location=  home    -10.0969306234577
+    Attrib  ast_PCT    -3.218463110718183
+    Attrib stl_PCT    8.474501242553654
+    Attrib  blk_PCT    2.778024863378138
+    Attrib  opp_Efg_pct    -5.7272610253314795
+    Attrib  opp_Turnover_PCT    17.67159941401807
+    Attrib  opp_orb_pct    -20.417923622798295
+    Attrib  opp_ft_rate    -1.5359355222601478
+    Attrib  opp_ast_PCT    -9.987867946357076
+    Attrib opp_stl_PCT    3.7760238191089655
+    Attrib  opp_blk_PCT    10.264266022830261
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.583177765235603
+    Attrib  Efg_pct    21.96282902017122
+    Attrib  Turnover_PCT    8.382844482197722
+    Attrib  orb_pct    19.906187759733736
+    Attrib  ft_rate    7.043854420183459
+    Attrib  location=  home    11.924890061953073
+    Attrib  ast_PCT    15.011226162431855
+    Attrib stl_PCT    3.378371785005329
+    Attrib  blk_PCT    25.799217636119685
+    Attrib  opp_Efg_pct    -0.21777576210409688
+    Attrib  opp_Turnover_PCT    17.632503501251662
+    Attrib  opp_orb_pct    -4.632928725436295
+    Attrib  opp_ft_rate    16.4804412716477
+    Attrib  opp_ast_PCT    -20.12586056802819
+    Attrib opp_stl_PCT    -12.434820595045174
+    Attrib  opp_blk_PCT    7.794554823887895
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -14.136683517759035
+    Attrib  Efg_pct    46.502418098377966
+    Attrib  Turnover_PCT    -10.21874146162822
+    Attrib  orb_pct    6.4557346709851995
+    Attrib  ft_rate    15.020948765411521
+    Attrib  location=  home    -1.6913972511517827
+    Attrib  ast_PCT    -22.612015602077108
+    Attrib stl_PCT    3.516006655942437
+    Attrib  blk_PCT    -25.60490882687871
+    Attrib  opp_Efg_pct    -52.57143114817367
+    Attrib  opp_Turnover_PCT    3.8793713935279714
+    Attrib  opp_orb_pct    -2.5265837175807357
+    Attrib  opp_ft_rate    -8.09697790456745
+    Attrib  opp_ast_PCT    13.986697646238065
+    Attrib opp_stl_PCT    6.28717752517511
+    Attrib  opp_blk_PCT    0.049107995286855916
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -18.055433349409768
+    Attrib  Efg_pct    15.831834302256269
+    Attrib  Turnover_PCT    -15.86113108931362
+    Attrib  orb_pct    18.74633381718571
+    Attrib  ft_rate    5.756961590193598
+    Attrib  location=  home    3.7598140659249086
+    Attrib  ast_PCT    3.121176549393263
+    Attrib stl_PCT    5.296517125322103
+    Attrib  blk_PCT    3.563690255385821
+    Attrib  opp_Efg_pct    -22.979441400567072
+    Attrib  opp_Turnover_PCT    3.8963318039860346
+    Attrib  opp_orb_pct    -9.427815109765914
+    Attrib  opp_ft_rate    -21.579625205705412
+    Attrib  opp_ast_PCT    -3.9184257319134583
+    Attrib opp_stl_PCT    16.30656180927922
+    Attrib  opp_blk_PCT    12.379293056318904
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -8.784744379519708
+    Attrib  Efg_pct    47.99803706771611
+    Attrib  Turnover_PCT    -3.484755712653757
+    Attrib  orb_pct    13.418893170862063
+    Attrib  ft_rate    15.388202186927158
+    Attrib  location=  home    -13.124125691904062
+    Attrib  ast_PCT    24.31649186569897
+    Attrib stl_PCT    -22.281151603519252
+    Attrib  blk_PCT    22.57520644897731
+    Attrib  opp_Efg_pct    -55.32279518319602
+    Attrib  opp_Turnover_PCT    21.96690588752525
+    Attrib  opp_orb_pct    8.70854945559416
+    Attrib  opp_ft_rate    -14.797276322057424
+    Attrib  opp_ast_PCT    12.488657496649774
+    Attrib opp_stl_PCT    -2.6355569670602
+    Attrib  opp_blk_PCT    -9.32918527987585
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -13.585387990945955
+    Attrib  Efg_pct    30.227719407926628
+    Attrib  Turnover_PCT    -30.136309026908446
+    Attrib  orb_pct    11.935399786888834
+    Attrib  ft_rate    -0.05674384486609787
+    Attrib  location=  home    -0.729058877983748
+    Attrib  ast_PCT    -7.7656013474434245
+    Attrib stl_PCT    -0.9809135848155496
+    Attrib  blk_PCT    -12.084021205451123
+    Attrib  opp_Efg_pct    -40.56479534383274
+    Attrib  opp_Turnover_PCT    14.141654371039985
+    Attrib  opp_orb_pct    -33.04611532141977
+    Attrib  opp_ft_rate    -5.962295775465769
+    Attrib  opp_ast_PCT    0.5782814433898548
+    Attrib opp_stl_PCT    2.673813574003474
+    Attrib  opp_blk_PCT    18.96683481248141
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.5896129813044927
+    Attrib  Efg_pct    35.9589222905155
+    Attrib  Turnover_PCT    -21.769642494842806
+    Attrib  orb_pct    12.718543578443308
+    Attrib  ft_rate    9.995867275858915
+    Attrib  location=  home    -3.3014563540872026
+    Attrib  ast_PCT    0.7902719346921184
+    Attrib stl_PCT    0.6540648429176749
+    Attrib  blk_PCT    0.04433298926737939
+    Attrib  opp_Efg_pct    -37.48901856307117
+    Attrib  opp_Turnover_PCT    13.119207977645418
+    Attrib  opp_orb_pct    -18.06977520423227
+    Attrib  opp_ft_rate    -14.044808378355189
+    Attrib  opp_ast_PCT    -4.78316726417617
+    Attrib opp_stl_PCT    7.940752394086292
+    Attrib  opp_blk_PCT    -1.6943645490624903
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Weight: 2.92
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    11.48041083323941
+    Node 2    5.465391204593249
+    Node 3    5.173911997574388
+    Node 4    5.636154431798479
+    Node 5    5.575803469285249
+    Node 6    5.273171334900691
+    Node 7    4.971852784048866
+    Node 8    5.494553050333602
+    Node 9    5.219761272042076
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -11.455297244435622
+    Node 2    -5.44291463836682
+    Node 3    -5.209863144298671
+    Node 4    -5.571908574113403
+    Node 5    -5.552443860729051
+    Node 6    -5.3497917396884604
+    Node 7    -5.022262908742207
+    Node 8    -5.548974866298251
+    Node 9    -5.163724525263961
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.7802621232852127
+    Attrib  Efg_pct    -0.12928363377618468
+    Attrib  Turnover_PCT    -0.07179154855712153
+    Attrib  orb_pct    0.29591302306854933
+    Attrib  ft_rate    0.5885626848171875
+    Attrib  location=  home    0.5866072784524626
+    Attrib  ast_PCT    0.02917659667673978
+    Attrib stl_PCT    0.3506873967375154
+    Attrib  blk_PCT    0.025966184895657864
+    Attrib  opp_Efg_pct    0.2529481141601964
+    Attrib  opp_Turnover_PCT    0.17890011596926125
+    Attrib  opp_orb_pct    0.12086806677777653
+    Attrib  opp_ft_rate    0.3902565444163284
+    Attrib  opp_ast_PCT    0.13672312444412782
+    Attrib opp_stl_PCT    0.22047048066765007
+    Attrib  opp_blk_PCT    0.4506007901696644
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.0629194217967695
+    Attrib  Efg_pct    -0.1691332044939216
+    Attrib  Turnover_PCT    -0.020142606630139948
+    Attrib  orb_pct    0.5229481930968254
+    Attrib  ft_rate    0.8605616862170391
+    Attrib  location=  home    0.980006908472971
+    Attrib  ast_PCT    0.01860414124575009
+    Attrib stl_PCT    0.5151978007467506
+    Attrib  blk_PCT    -0.03627037515641873
+    Attrib  opp_Efg_pct    0.35119292498073235
+    Attrib  opp_Turnover_PCT    0.17174326602456935
+    Attrib  opp_orb_pct    0.2638703195238163
+    Attrib  opp_ft_rate    0.5223798956780935
+    Attrib  opp_ast_PCT    0.1714164714168065
+    Attrib opp_stl_PCT    0.41002680164145794
+    Attrib  opp_blk_PCT    0.6708829290126579
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.7570833090581724
+    Attrib  Efg_pct    -0.15609750683096502
+    Attrib  Turnover_PCT    -0.08497428536564128
+    Attrib  orb_pct    0.36509183659581496
+    Attrib  ft_rate    0.6107020270688938
+    Attrib  location=  home    0.6587115426475325
+    Attrib  ast_PCT    0.02604799489213933
+    Attrib stl_PCT    0.3652163140403247
+    Attrib  blk_PCT    0.03808940269484422
+    Attrib  opp_Efg_pct    0.28022413331070234
+    Attrib  opp_Turnover_PCT    0.12013251856736996
+    Attrib  opp_orb_pct    0.1523220079910834
+    Attrib  opp_ft_rate    0.3795075292335202
+    Attrib  opp_ast_PCT    0.09912219009093164
+    Attrib opp_stl_PCT    0.27885999028260106
+    Attrib  opp_blk_PCT    0.49186700376697234
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.2877257602596583
+    Attrib  Efg_pct    -0.03436563703887865
+    Attrib  Turnover_PCT    -0.064773742348933
+    Attrib  orb_pct    0.1209556146204975
+    Attrib  ft_rate    0.1544734252903963
+    Attrib  location=  home    0.051490545186034374
+    Attrib  ast_PCT    0.09170211628275661
+    Attrib stl_PCT    0.09902764296720104
+    Attrib  blk_PCT    0.06348024901248522
+    Attrib  opp_Efg_pct    0.13586051671040314
+    Attrib  opp_Turnover_PCT    0.00923115217658032
+    Attrib  opp_orb_pct    0.10955061356863632
+    Attrib  opp_ft_rate    0.1764814074336584
+    Attrib  opp_ast_PCT    0.043453100654624564
+    Attrib opp_stl_PCT    0.11634333931422088
+    Attrib  opp_blk_PCT    0.213463224947043
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.9528539057761146
+    Attrib  Efg_pct    -0.1156885320065881
+    Attrib  Turnover_PCT    -0.044524856073637695
+    Attrib  orb_pct    0.4511636178337867
+    Attrib  ft_rate    0.7516889790893971
+    Attrib  location=  home    0.8244742896753674
+    Attrib  ast_PCT    0.010835159762378983
+    Attrib stl_PCT    0.46404011381311827
+    Attrib  blk_PCT    0.033666308722707095
+    Attrib  opp_Efg_pct    0.2849556757500466
+    Attrib  opp_Turnover_PCT    0.17009960175764616
+    Attrib  opp_orb_pct    0.21789824227308546
+    Attrib  opp_ft_rate    0.5013166986364672
+    Attrib  opp_ast_PCT    0.1336890910602171
+    Attrib opp_stl_PCT    0.3208312399037867
+    Attrib  opp_blk_PCT    0.579260902272098
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.9702207950455949
+    Attrib  Efg_pct    -0.16238263035136388
+    Attrib  Turnover_PCT    -0.09813069862428087
+    Attrib  orb_pct    0.43676479650745453
+    Attrib  ft_rate    0.7435669596798941
+    Attrib  location=  home    0.8623549380090054
+    Attrib  ast_PCT    0.030350119542350153
+    Attrib stl_PCT    0.4019310473635342
+    Attrib  blk_PCT    0.005423573784290924
+    Attrib  opp_Efg_pct    0.3100776441022299
+    Attrib  opp_Turnover_PCT    0.1777263376729968
+    Attrib  opp_orb_pct    0.18635191951089428
+    Attrib  opp_ft_rate    0.5364216661690021
+    Attrib  opp_ast_PCT    0.12443768111948646
+    Attrib opp_stl_PCT    0.34980910201294907
+    Attrib  opp_blk_PCT    0.6120479357786364
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.7112307774171627
+    Attrib  Efg_pct    -0.10786522552594208
+    Attrib  Turnover_PCT    -0.014736362705373705
+    Attrib  orb_pct    0.334082421143628
+    Attrib  ft_rate    0.6154418331060519
+    Attrib  location=  home    0.5908010533337072
+    Attrib  ast_PCT    0.09019517920021278
+    Attrib stl_PCT    0.3039504951864711
+    Attrib  blk_PCT    -0.014334141009318688
+    Attrib  opp_Efg_pct    0.26144641345911857
+    Attrib  opp_Turnover_PCT    0.15100696751039885
+    Attrib  opp_orb_pct    0.1826718793581985
+    Attrib  opp_ft_rate    0.42184410413515694
+    Attrib  opp_ast_PCT    0.1617640774053408
+    Attrib opp_stl_PCT    0.24866552346422913
+    Attrib  opp_blk_PCT    0.46815619521509033
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.9195671462890457
+    Attrib  Efg_pct    -0.16023935198478004
+    Attrib  Turnover_PCT    -0.09484816861337796
+    Attrib  orb_pct    0.43389438850231055
+    Attrib  ft_rate    0.7592519430059584
+    Attrib  location=  home    0.7998395934510588
+    Attrib  ast_PCT    0.02210791373079639
+    Attrib stl_PCT    0.3960974543814886
+    Attrib  blk_PCT    0.034082859318168644
+    Attrib  opp_Efg_pct    0.2986519244778804
+    Attrib  opp_Turnover_PCT    0.21250905481464982
+    Attrib  opp_orb_pct    0.1708734199866548
+    Attrib  opp_ft_rate    0.4970714330533709
+    Attrib  opp_ast_PCT    0.12420258938217252
+    Attrib opp_stl_PCT    0.2931141701250415
+    Attrib  opp_blk_PCT    0.5383715026237039
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Weight: 0.23
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -9.076847074737584
+    Node 2    5.8278408670903294
+    Node 3    5.71510519323242
+    Node 4    6.457642465204519
+    Node 5    6.692769291462623
+    Node 6    5.73883296160682
+    Node 7    6.420135728435287
+    Node 8    6.26400102294801
+    Node 9    7.000936972441365
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    9.07299664959583
+    Node 2    -5.81449219873379
+    Node 3    -5.7214076277580626
+    Node 4    -6.455485388732719
+    Node 5    -6.687451295472657
+    Node 6    -5.790725401692361
+    Node 7    -6.616580525589141
+    Node 8    -6.2648108660979025
+    Node 9    -6.994215443917763
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    3.0200007318140587
+    Attrib  Efg_pct    -3.6249295374120876
+    Attrib  Turnover_PCT    7.086058673003534
+    Attrib  orb_pct    -2.888988836206702
+    Attrib  ft_rate    -2.3440227754511156
+    Attrib  location=  home    -11.234927869871898
+    Attrib  ast_PCT    7.278203517320377
+    Attrib stl_PCT    -9.442628860791947
+    Attrib  blk_PCT    3.933839237036501
+    Attrib  opp_Efg_pct    5.8136897164657775
+    Attrib  opp_Turnover_PCT    -4.545618439592382
+    Attrib  opp_orb_pct    0.48311327918739944
+    Attrib  opp_ft_rate    0.07186875442295912
+    Attrib  opp_ast_PCT    0.2554947815105663
+    Attrib opp_stl_PCT    1.938103250816522
+    Attrib  opp_blk_PCT    2.103532689169579
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.5592607358744104
+    Attrib  Efg_pct    -6.080181293044024
+    Attrib  Turnover_PCT    -0.6168242538651479
+    Attrib  orb_pct    -5.579439166888381
+    Attrib  ft_rate    -1.7373587081746085
+    Attrib  location=  home    -14.78924923981899
+    Attrib  ast_PCT    2.6943234973822463
+    Attrib stl_PCT    -6.573032282154425
+    Attrib  blk_PCT    0.517341377499111
+    Attrib  opp_Efg_pct    2.8191191354638927
+    Attrib  opp_Turnover_PCT    -5.111452250243015
+    Attrib  opp_orb_pct    1.8826293745126492
+    Attrib  opp_ft_rate    -0.7502571601464398
+    Attrib  opp_ast_PCT    2.7451930452066793
+    Attrib opp_stl_PCT    -1.1046490281843613
+    Attrib  opp_blk_PCT    0.9910533303475985
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    0.24013543904933002
+    Attrib  Efg_pct    -13.613178263081076
+    Attrib  Turnover_PCT    0.10617850726037659
+    Attrib  orb_pct    -6.622229626334827
+    Attrib  ft_rate    0.9878064911951485
+    Attrib  location=  home    -1.2806790782781075
+    Attrib  ast_PCT    5.155180305487633
+    Attrib stl_PCT    5.82757230494545
+    Attrib  blk_PCT    1.7318804329216828
+    Attrib  opp_Efg_pct    7.788753509196391
+    Attrib  opp_Turnover_PCT    -4.038117564976834
+    Attrib  opp_orb_pct    5.835414081731586
+    Attrib  opp_ft_rate    6.63051492373883
+    Attrib  opp_ast_PCT    0.6034055664206572
+    Attrib opp_stl_PCT    7.7221522690594835
+    Attrib  opp_blk_PCT    -2.489102886120161
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.962766361449769
+    Attrib  Efg_pct    -13.078388844143763
+    Attrib  Turnover_PCT    4.219158326870671
+    Attrib  orb_pct    2.712876377454987
+    Attrib  ft_rate    -1.6758973784059927
+    Attrib  location=  home    2.1704099460764117
+    Attrib  ast_PCT    -3.74713217632739
+    Attrib stl_PCT    0.4885143271050957
+    Attrib  blk_PCT    5.311529517044713
+    Attrib  opp_Efg_pct    15.78884505213239
+    Attrib  opp_Turnover_PCT    -3.632679744800854
+    Attrib  opp_orb_pct    3.457521137245583
+    Attrib  opp_ft_rate    3.753906133716878
+    Attrib  opp_ast_PCT    2.35794077613004
+    Attrib opp_stl_PCT    -3.3014764698096246
+    Attrib  opp_blk_PCT    -1.167820864620475
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    2.4470953333930825
+    Attrib  Efg_pct    -7.020673428342801
+    Attrib  Turnover_PCT    -0.8667500359135093
+    Attrib  orb_pct    -6.943065517667732
+    Attrib  ft_rate    -0.5921723867191988
+    Attrib  location=  home    -14.831843041041386
+    Attrib  ast_PCT    1.0117039720868848
+    Attrib stl_PCT    -9.453811534641392
+    Attrib  blk_PCT    0.34284896470832166
+    Attrib  opp_Efg_pct    4.368741553103201
+    Attrib  opp_Turnover_PCT    -3.6407713910596793
+    Attrib  opp_orb_pct    5.087459219165616
+    Attrib  opp_ft_rate    -2.7280375820900136
+    Attrib  opp_ast_PCT    2.4042019483565538
+    Attrib opp_stl_PCT    -2.46403706282946
+    Attrib  opp_blk_PCT    0.7531168154930294
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.8936917721029121
+    Attrib  Efg_pct    -5.217493240217393
+    Attrib  Turnover_PCT    -0.8340179034769397
+    Attrib  orb_pct    -5.16680926565028
+    Attrib  ft_rate    -2.1684729141805943
+    Attrib  location=  home    -15.638039824873614
+    Attrib  ast_PCT    3.5100810149555945
+    Attrib stl_PCT    -5.191407640803481
+    Attrib  blk_PCT    -0.0025197680194114693
+    Attrib  opp_Efg_pct    1.879153229986284
+    Attrib  opp_Turnover_PCT    -5.7474623256626005
+    Attrib  opp_orb_pct    2.323066609361501
+    Attrib  opp_ft_rate    -0.7446132652784423
+    Attrib  opp_ast_PCT    2.506359553994269
+    Attrib opp_stl_PCT    -0.18072640999962192
+    Attrib  opp_blk_PCT    0.9924076670670136
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    1.0815017143947003
+    Attrib  Efg_pct    -8.816106490551295
+    Attrib  Turnover_PCT    7.319650204029966
+    Attrib  orb_pct    -4.063514876548354
+    Attrib  ft_rate    -8.149262136544802
+    Attrib  location=  home    -3.9079134886157068
+    Attrib  ast_PCT    -3.755017094904459
+    Attrib stl_PCT    5.390564038355796
+    Attrib  blk_PCT    -4.88399279604553
+    Attrib  opp_Efg_pct    9.560283916966226
+    Attrib  opp_Turnover_PCT    -9.319089021188987
+    Attrib  opp_orb_pct    2.066390286278483
+    Attrib  opp_ft_rate    10.010006777549604
+    Attrib  opp_ast_PCT    7.375805027353284
+    Attrib opp_stl_PCT    3.3979456180719234
+    Attrib  opp_blk_PCT    5.046457920213478
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.2449302371797603
+    Attrib  Efg_pct    -16.858437706384038
+    Attrib  Turnover_PCT    -5.323619398553188
+    Attrib  orb_pct    -9.311558662507757
+    Attrib  ft_rate    -2.902560857755324
+    Attrib  location=  home    -12.703777377186166
+    Attrib  ast_PCT    1.909034857192835
+    Attrib stl_PCT    -4.624939562166684
+    Attrib  blk_PCT    -0.43074548306309074
+    Attrib  opp_Efg_pct    7.355774448686412
+    Attrib  opp_Turnover_PCT    -4.834382596336449
+    Attrib  opp_orb_pct    -6.1364452854399865
+    Attrib  opp_ft_rate    5.24297457493091
+    Attrib  opp_ast_PCT    -2.8157751372730235
+    Attrib opp_stl_PCT    3.652856822335627
+    Attrib  opp_blk_PCT    -3.713351050877116
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Weight: 0.85
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -11.710398209881967
+    Node 2    2.369190910991462
+    Node 3    1.319667612615371
+    Node 4    1.6057952723440196
+    Node 5    0.8609287510158213
+    Node 6    1.1244370277109488
+    Node 7    0.9481465699237158
+    Node 8    1.6614970735022538
+    Node 9    1.8075629691044868
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -6.496486839011633
+    Node 2    -2.8225742939232097
+    Node 3    -0.333767859490537
+    Node 4    -0.7645570101633569
+    Node 5    0.35059403534376443
+    Node 6    -0.070946669291903
+    Node 7    0.11768542196370921
+    Node 8    -1.010513313508649
+    Node 9    -1.1336945664191564
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.601543362107335
+    Attrib  Efg_pct    -1.5963780933754401
+    Attrib  Turnover_PCT    1.939346516389129
+    Attrib  orb_pct    -1.6528656244022184
+    Attrib  ft_rate    1.3854918921978636
+    Attrib  location=  home    2.1378928729297306
+    Attrib  ast_PCT    1.3578169965401177
+    Attrib stl_PCT    -0.5660276376031962
+    Attrib  blk_PCT    3.0712128624610204
+    Attrib  opp_Efg_pct    1.1473811788120247
+    Attrib  opp_Turnover_PCT    -1.2523878035432812
+    Attrib  opp_orb_pct    1.085747284031799
+    Attrib  opp_ft_rate    1.2197008907005598
+    Attrib  opp_ast_PCT    1.0859368456749625
+    Attrib opp_stl_PCT    1.4948454812589105
+    Attrib  opp_blk_PCT    0.9803274023946538
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.252111628312801
+    Attrib  Efg_pct    0.08882594735002543
+    Attrib  Turnover_PCT    0.978219848681368
+    Attrib  orb_pct    -0.1591890151101946
+    Attrib  ft_rate    1.3949828381549672
+    Attrib  location=  home    0.5469412669132376
+    Attrib  ast_PCT    0.06433846012389201
+    Attrib stl_PCT    0.8633847592062582
+    Attrib  blk_PCT    1.9944154787619728
+    Attrib  opp_Efg_pct    0.7094967606494093
+    Attrib  opp_Turnover_PCT    0.3784167174316572
+    Attrib  opp_orb_pct    0.5404122937340048
+    Attrib  opp_ft_rate    1.615430008824131
+    Attrib  opp_ast_PCT    0.09896132209370148
+    Attrib opp_stl_PCT    1.3421174976566617
+    Attrib  opp_blk_PCT    1.2059566044752372
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.45248576467058
+    Attrib  Efg_pct    -0.030965868836888674
+    Attrib  Turnover_PCT    1.0470651074132564
+    Attrib  orb_pct    -0.04521863001628573
+    Attrib  ft_rate    1.6169717430258224
+    Attrib  location=  home    0.65264576065673
+    Attrib  ast_PCT    0.07155012441684763
+    Attrib stl_PCT    0.8926755442671728
+    Attrib  blk_PCT    2.0242819569979127
+    Attrib  opp_Efg_pct    0.6365465717295575
+    Attrib  opp_Turnover_PCT    0.3876694840222616
+    Attrib  opp_orb_pct    0.5353170607037118
+    Attrib  opp_ft_rate    1.760150198907368
+    Attrib  opp_ast_PCT    0.1398779546944446
+    Attrib opp_stl_PCT    1.3927026369358937
+    Attrib  opp_blk_PCT    1.3758244526160948
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.9637928049157716
+    Attrib  Efg_pct    0.13505120582763136
+    Attrib  Turnover_PCT    0.7604401139128999
+    Attrib  orb_pct    0.025824248909635163
+    Attrib  ft_rate    1.3559864132710095
+    Attrib  location=  home    0.36887274065947645
+    Attrib  ast_PCT    0.02605841878628749
+    Attrib stl_PCT    0.8365997507538724
+    Attrib  blk_PCT    1.709446097350681
+    Attrib  opp_Efg_pct    0.6955788227227105
+    Attrib  opp_Turnover_PCT    0.2886220037878512
+    Attrib  opp_orb_pct    0.3638697195855822
+    Attrib  opp_ft_rate    1.4887388961890393
+    Attrib  opp_ast_PCT    0.050901502594035315
+    Attrib opp_stl_PCT    1.2549076860480854
+    Attrib  opp_blk_PCT    1.25619191383357
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -4.079475510687448
+    Attrib  Efg_pct    0.1636904769058189
+    Attrib  Turnover_PCT    0.88144913852044
+    Attrib  orb_pct    -0.23519575271297025
+    Attrib  ft_rate    1.356561255163627
+    Attrib  location=  home    0.4906627657107499
+    Attrib  ast_PCT    0.09465707706126858
+    Attrib stl_PCT    0.8011179942921152
+    Attrib  blk_PCT    1.9288936710617686
+    Attrib  opp_Efg_pct    0.7345098196384514
+    Attrib  opp_Turnover_PCT    0.3155800771448156
+    Attrib  opp_orb_pct    0.5280593661650292
+    Attrib  opp_ft_rate    1.4379520632785117
+    Attrib  opp_ast_PCT    0.07885358031909068
+    Attrib opp_stl_PCT    1.2690968239227258
+    Attrib  opp_blk_PCT    1.1569397860196653
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -4.167245801666293
+    Attrib  Efg_pct    0.17996932534562438
+    Attrib  Turnover_PCT    0.8081370640071457
+    Attrib  orb_pct    0.06644927743469131
+    Attrib  ft_rate    1.443263701246521
+    Attrib  location=  home    0.3577759068687119
+    Attrib  ast_PCT    0.0378364371994502
+    Attrib stl_PCT    0.8308626890131355
+    Attrib  blk_PCT    1.7336414643777844
+    Attrib  opp_Efg_pct    0.6687677975212176
+    Attrib  opp_Turnover_PCT    0.29820619920981584
+    Attrib  opp_orb_pct    0.36057662912191707
+    Attrib  opp_ft_rate    1.5803367853980543
+    Attrib  opp_ast_PCT    0.031731384592892015
+    Attrib opp_stl_PCT    1.2282447756842536
+    Attrib  opp_blk_PCT    1.300959678202096
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.640889233048478
+    Attrib  Efg_pct    -0.10962422681522362
+    Attrib  Turnover_PCT    1.017207005290727
+    Attrib  orb_pct    0.11723377570737191
+    Attrib  ft_rate    1.662538364172586
+    Attrib  location=  home    0.5826591669095122
+    Attrib  ast_PCT    0.010339804319106458
+    Attrib stl_PCT    0.9280461105165366
+    Attrib  blk_PCT    1.9949456622313886
+    Attrib  opp_Efg_pct    0.6659854878852338
+    Attrib  opp_Turnover_PCT    0.4705146413198227
+    Attrib  opp_orb_pct    0.4663706140775515
+    Attrib  opp_ft_rate    1.8502058074774246
+    Attrib  opp_ast_PCT    0.07672143413108674
+    Attrib opp_stl_PCT    1.5145176187446228
+    Attrib  opp_blk_PCT    1.4327464154026703
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -4.62694971390535
+    Attrib  Efg_pct    -0.1268481112518728
+    Attrib  Turnover_PCT    1.0332234592879954
+    Attrib  orb_pct    0.012861654559513547
+    Attrib  ft_rate    1.6474120847891904
+    Attrib  location=  home    0.6876759001226994
+    Attrib  ast_PCT    0.07307870194818937
+    Attrib stl_PCT    0.9108706826985574
+    Attrib  blk_PCT    2.1156176721511817
+    Attrib  opp_Efg_pct    0.6612598615111044
+    Attrib  opp_Turnover_PCT    0.5065744652863211
+    Attrib  opp_orb_pct    0.5001045083191189
+    Attrib  opp_ft_rate    1.7923020265468423
+    Attrib  opp_ast_PCT    0.0829569636928779
+    Attrib opp_stl_PCT    1.4290540142922417
+    Attrib  opp_blk_PCT    1.4135784663325717
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Weight: 0.43
+
+Number of performed Iterations: 5
+
+
+Time taken to build model: 19.6 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2495               93.5859 %
+Incorrectly Classified Instances       171                6.4141 %
+Kappa statistic                          0.8717
+Mean absolute error                      0.0699
+Root mean squared error                  0.2379
+Relative absolute error                 13.9775 %
+Root relative squared error             47.5785 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.935    0.063    0.937      0.935    0.936      0.872    0.972     0.969       loss
+                 0.937    0.065    0.935      0.937    0.936      0.872    0.972     0.968       win
+Weighted Avg.    0.936    0.064    0.936      0.936    0.936      0.872    0.972     0.969     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1246   87 |    a =   loss
+   84 1249 |    b =   win
+

@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.5 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2016_results-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   5
+                Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.3377887950249607
+    Node 2    -2.1453383878838026
+    Node 3    -2.4102220299951846
+    Node 4    -1.1726522299100903
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.337788795024965
+    Node 2    2.1453383878838013
+    Node 3    2.41022202999519
+    Node 4    1.1726522299100897
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.4291013552903196
+    Attrib   Efg_pct    19.018887155276733
+    Attrib  Turnover_PCT    -3.485451965468439
+    Attrib  orb_pct    4.734849785858628
+    Attrib  ft_rate    4.054260323323053
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    8.020343848525224
+    Attrib   Efg_pct    14.46250150259546
+    Attrib  Turnover_PCT    -4.432846624680154
+    Attrib  orb_pct    4.094922410734154
+    Attrib  ft_rate    5.1675195176486115
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    2.3046708116925996
+    Attrib   Efg_pct    25.92942213033428
+    Attrib  Turnover_PCT    -12.803734584856878
+    Attrib  orb_pct    7.814645683539775
+    Attrib  ft_rate    5.815503763817718
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Time taken to build model: 0.95 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1915               71.8305 %
+Incorrectly Classified Instances       751               28.1695 %
+Kappa statistic                          0.4366
+Mean absolute error                      0.3571
+Root mean squared error                  0.4294
+Relative absolute error                 71.4124 %
+Root relative squared error             85.8723 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.809    0.372    0.685      0.809    0.742      0.444    0.800     0.795      loss
+                 0.628    0.191    0.766      0.628    0.690      0.444    0.800     0.797      win
+Weighted Avg.    0.718    0.282    0.726      0.718    0.716      0.444    0.800     0.796     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1078  255 |    a =  loss
+  496  837 |    b =  win
+
