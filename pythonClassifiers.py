@@ -2,9 +2,16 @@ from sklearn.tree import DecisionTreeClassifier #Decision Tree
 from sklearn.naive_bayes import GaussianNB #Naive Bayes
 from sklearn.neural_network import MLPClassifier #Artificial Neural Network
 from sklearn import svm #Support Vector Machine
-from sklearn.ensemble import AdaBoostClassifier #Ensemble Classifier
+#Ensemble Classifiers:
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import BaggingClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+#Preprocessing:
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import LabelBinarizer
+
 import sklearn.metrics as metrics
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_val_predict
@@ -27,7 +34,7 @@ def classifiers(records, classes):
 	accuracy = 0
 	f_measure = 0
 
-	decision_tree = DecisionTreeClassifier()
+	decision_tree = DecisionTreeClassifier(criterion="entropy")
 	dt_prediction = cross_val_predict(decision_tree, records, classes, cv=10)
 	dt_accuracy = metrics.accuracy_score(classes, dt_prediction)
 	dt_confusion_matrix = metrics.confusion_matrix(classes, dt_prediction)
@@ -72,7 +79,7 @@ def classifiers(records, classes):
 		accuracy = ann_accuracy
 		f_measure = ann_fmeasure
 
-	support_vm = svm.SVC()
+	support_vm = svm.SVC(kernel='linear')
 	svm_prediction = cross_val_predict(support_vm, records, classes, cv=10)
 	svm_accuracy = metrics.accuracy_score(classes, svm_prediction)
 	svm_confusion_matrix = metrics.confusion_matrix(classes, svm_prediction)
@@ -98,9 +105,54 @@ def classifiers(records, classes):
 	print("F-measure:", ensemble_fmeasure)'''
 
 	if ensemble_accuracy > accuracy and ensemble_fmeasure > f_measure:
-		best_classifier = "Ensemble Classifier"
+		best_classifier = "Adaboost Classifier"
 		accuracy = ensemble_accuracy
 		f_measure = ensemble_fmeasure
+
+	bagging = BaggingClassifier()
+	bagging_prediction = cross_val_predict(bagging, records, classes, cv=10)
+	bagging_accuracy = metrics.accuracy_score(classes, bagging_prediction)
+	bagging_confusion_matrix = metrics.confusion_matrix(classes, bagging_prediction)
+	bagging_fmeasure = fMeasure(bagging_confusion_matrix)
+
+	'''print("Ensemble (Bagging) Accuracy:", bagging_accuracy)
+	print("Confusion Matrix:", bagging_confusion_matrix)
+	print("F-measure:", bagging_fmeasure)'''
+
+	if bagging_accuracy > accuracy and bagging_fmeasure > f_measure:
+		best_classifier = "Bagging Classifier"
+		accuracy = bagging_accuracy
+		f_measure = bagging_fmeasure
+
+	forest = RandomForestClassifier()
+	forest_prediction = cross_val_predict(forest, records, classes, cv=10)
+	forest_accuracy = metrics.accuracy_score(classes, forest_prediction)
+	forest_confusion_matrix = metrics.confusion_matrix(classes, forest_prediction)
+	forest_fmeasure = fMeasure(forest_confusion_matrix)
+
+	'''print("Ensemble (Random Forest) Accuracy:", forest_accuracy)
+	print("Confusion Matrix:", forest_confusion_matrix)
+	print("F-measure:", forest_fmeasure)'''
+
+	if forest_accuracy > accuracy and forest_fmeasure > f_measure:
+		best_classifier = "Forest Classifier"
+		accuracy = forest_accuracy
+		f_measure = forest_fmeasure
+
+	boosting = GradientBoostingClassifier()
+	boosting_prediction = cross_val_predict(boosting, records, classes, cv=10)
+	boosting_accuracy = metrics.accuracy_score(classes, boosting_prediction)
+	boosting_confusion_matrix = metrics.confusion_matrix(classes, boosting_prediction)
+	boosting_fmeasure = fMeasure(boosting_confusion_matrix)
+
+	'''print("Ensemble (Gradient Boosting) Accuracy:", boosting_accuracy)
+	print("Confusion Matrix:", boosting_confusion_matrix)
+	print("F-measure:", boosting_fmeasure)'''
+
+	if boosting_accuracy > accuracy and boosting_fmeasure > f_measure:
+		best_classifier = "Gradient Boosting Classifier"
+		accuracy = boosting_accuracy
+		f_measure = boosting_fmeasure
 
 	print("Most Accurate Classifier:", best_classifier)
 	print("Accuracy:",accuracy)
