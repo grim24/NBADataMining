@@ -1,0 +1,9 @@
+  loss,  win.
+ Efg_pct: continuous.
+ Turnover_PCT: continuous.
+ orb_pct: continuous.
+ ft_rate: continuous.
+ opp_Efg_pct: continuous.
+ opp_Turnover_PCT: continuous.
+ opp_orb_pct: continuous.
+ opp_ft_rate: continuous.

@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     2016_results-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   5
+                Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+  Efg_pct <= 0.415525
+|     Efg_pct <= 0.324201
+|   |     Efg_pct <= 0.175799:  loss (72.0/1.0)
+|   |     Efg_pct > 0.175799
+|   |   |    Turnover_PCT <= 0.464115
+|   |   |   |    orb_pct <= 0.370062:  loss (99.0/12.0)
+|   |   |   |    orb_pct > 0.370062
+|   |   |   |   |    ft_rate <= 0.496038:  loss (174.0/49.0)
+|   |   |   |   |    ft_rate > 0.496038:  win (13.0/2.0)
+|   |   |    Turnover_PCT > 0.464115:  loss (207.0/21.0)
+|     Efg_pct > 0.324201
+|   |    Turnover_PCT <= 0.344498
+|   |   |    ft_rate <= 0.323296:  loss (106.0/43.0)
+|   |   |    ft_rate > 0.323296:  win (79.0/26.0)
+|   |    Turnover_PCT > 0.344498:  loss (434.0/138.0)
+  Efg_pct > 0.415525
+|     Efg_pct <= 0.59589
+|   |    Turnover_PCT <= 0.535885:  win (760.0/265.0)
+|   |    Turnover_PCT > 0.535885
+|   |   |    Turnover_PCT <= 0.789474
+|   |   |   |    orb_pct <= 0.550936:  loss (201.0/83.0)
+|   |   |   |    orb_pct > 0.550936
+|   |   |   |   |     Efg_pct <= 0.458904:  loss (20.0/8.0)
+|   |   |   |   |     Efg_pct > 0.458904:  win (47.0/11.0)
+|   |   |    Turnover_PCT > 0.789474:  loss (24.0/3.0)
+|     Efg_pct > 0.59589
+|   |    Turnover_PCT <= 0.665072:  win (372.0/31.0)
+|   |    Turnover_PCT > 0.665072
+|   |   |    orb_pct <= 0.370062
+|   |   |   |    orb_pct <= 0.326403:  win (25.0/11.0)
+|   |   |   |    orb_pct > 0.326403:  loss (5.0)
+|   |   |    orb_pct > 0.370062
+|   |   |   |    Turnover_PCT <= 0.779904:  win (23.0)
+|   |   |   |    Turnover_PCT > 0.779904
+|   |   |   |   |     Efg_pct <= 0.634703:  loss (2.0)
+|   |   |   |   |     Efg_pct > 0.634703:  win (3.0/1.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1871               70.18   %
+Incorrectly Classified Instances       795               29.82   %
+Kappa statistic                          0.4036
+Mean absolute error                      0.3788
+Root mean squared error                  0.4511
+Relative absolute error                 75.7699 %
+Root relative squared error             90.2109 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.709    0.305    0.699      0.709    0.704      0.404    0.755     0.711      loss
+                 0.695    0.291    0.705      0.695    0.700      0.404    0.755     0.737      win
+Weighted Avg.    0.702    0.298    0.702      0.702    0.702      0.404    0.755     0.724     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 945 388 |   a =  loss
+ 407 926 |   b =  win
+

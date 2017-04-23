@@ -1,0 +1,227 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2016_advanced_results_opp_team-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   16
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location=  home
+               ast_PCT
+              stl_PCT
+               blk_PCT
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               opp_ast_PCT
+              opp_stl_PCT
+               opp_blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.115277772718591
+    Node 2    11.720300979853066
+    Node 3    14.80476285392663
+    Node 4    -12.462031620026265
+    Node 5    -14.353608481956167
+    Node 6    15.033451564856804
+    Node 7    -14.74789307432456
+    Node 8    -10.231615952889529
+    Node 9    -11.173159288020019
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.115285154653151
+    Node 2    -11.720313267976685
+    Node 3    -14.804779410349889
+    Node 4    12.462044252062688
+    Node 5    14.35362345276632
+    Node 6    -15.033466813093463
+    Node 7    14.74790884902977
+    Node 8    10.231627019800415
+    Node 9    11.173170492433263
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.011719375930526
+    Attrib  Efg_pct    -8.441769556639532
+    Attrib  Turnover_PCT    4.183724133233387
+    Attrib  orb_pct    5.568412274966732
+    Attrib  ft_rate    1.6839830293236477
+    Attrib  location=  home    0.975814088263955
+    Attrib  ast_PCT    -2.740491670202373
+    Attrib stl_PCT    -4.877789474410259
+    Attrib  blk_PCT    -4.431388242069087
+    Attrib  opp_Efg_pct    5.665425123737991
+    Attrib  opp_Turnover_PCT    -4.114350258411529
+    Attrib  opp_orb_pct    -5.132128096390789
+    Attrib  opp_ft_rate    5.25832022379005
+    Attrib  opp_ast_PCT    -6.70791477483161
+    Attrib opp_stl_PCT    2.4018998445514272
+    Attrib  opp_blk_PCT    -7.605087152795938
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.48610304805694465
+    Attrib  Efg_pct    0.5132017457080386
+    Attrib  Turnover_PCT    8.761014245699945
+    Attrib  orb_pct    -2.3344341166908174
+    Attrib  ft_rate    0.6876566295307747
+    Attrib  location=  home    -1.752840748088976
+    Attrib  ast_PCT    -2.0655854217515297
+    Attrib stl_PCT    8.379585006192013
+    Attrib  blk_PCT    10.570506241953742
+    Attrib  opp_Efg_pct    8.559854677387792
+    Attrib  opp_Turnover_PCT    -12.469031301025495
+    Attrib  opp_orb_pct    3.309096461131846
+    Attrib  opp_ft_rate    1.3391490717421806
+    Attrib  opp_ast_PCT    -0.6740479630211736
+    Attrib opp_stl_PCT    3.587501088346831
+    Attrib  opp_blk_PCT    -0.68555532956437
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -6.841902927992047
+    Attrib  Efg_pct    12.888754700736495
+    Attrib  Turnover_PCT    -0.6974048332237236
+    Attrib  orb_pct    -2.134092053716898
+    Attrib  ft_rate    1.649473867970749
+    Attrib  location=  home    -3.618707334052436
+    Attrib  ast_PCT    -8.678685222397995
+    Attrib stl_PCT    8.032369997293431
+    Attrib  blk_PCT    0.3777170634146853
+    Attrib  opp_Efg_pct    -14.863428853871412
+    Attrib  opp_Turnover_PCT    1.613254306229526
+    Attrib  opp_orb_pct    -8.012271382132646
+    Attrib  opp_ft_rate    -8.804875135474823
+    Attrib  opp_ast_PCT    -2.466526996273026
+    Attrib opp_stl_PCT    -0.21572612028776036
+    Attrib  opp_blk_PCT    0.12725492281799392
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.6796554541659
+    Attrib  Efg_pct    16.056988184343634
+    Attrib  Turnover_PCT    -8.515846279062204
+    Attrib  orb_pct    7.555208193765107
+    Attrib  ft_rate    8.769204334592748
+    Attrib  location=  home    -2.3585438626569943
+    Attrib  ast_PCT    1.0474361247729918
+    Attrib stl_PCT    0.8000116336639812
+    Attrib  blk_PCT    0.017867639473748177
+    Attrib  opp_Efg_pct    -22.987406749954634
+    Attrib  opp_Turnover_PCT    0.03264782965819876
+    Attrib  opp_orb_pct    -5.100729651429323
+    Attrib  opp_ft_rate    -11.041218880450296
+    Attrib  opp_ast_PCT    0.15469880873070863
+    Attrib opp_stl_PCT    2.0566057184152853
+    Attrib  opp_blk_PCT    -3.248075120417789
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.38388182981325486
+    Attrib  Efg_pct    -28.253191180884684
+    Attrib  Turnover_PCT    8.01346099366478
+    Attrib  orb_pct    -6.403503139388398
+    Attrib  ft_rate    -6.101587967839719
+    Attrib  location=  home    0.008919915879192658
+    Attrib  ast_PCT    2.5072861449520265
+    Attrib stl_PCT    1.1184082962126525
+    Attrib  blk_PCT    0.6489944069289263
+    Attrib  opp_Efg_pct    25.177460212026016
+    Attrib  opp_Turnover_PCT    -16.37180889928241
+    Attrib  opp_orb_pct    9.048142967794588
+    Attrib  opp_ft_rate    6.300551408047661
+    Attrib  opp_ast_PCT    0.4214845934761673
+    Attrib opp_stl_PCT    1.32144088897319
+    Attrib  opp_blk_PCT    -4.117173805547411
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -6.962683825786207
+    Attrib  Efg_pct    11.229571438969776
+    Attrib  Turnover_PCT    -15.768301585798252
+    Attrib  orb_pct    8.94314225212531
+    Attrib  ft_rate    2.4364838727088256
+    Attrib  location=  home    -3.710245253114731
+    Attrib  ast_PCT    8.336047537926927
+    Attrib stl_PCT    1.4636156937553744
+    Attrib  blk_PCT    -4.362399994624696
+    Attrib  opp_Efg_pct    -10.14878541351855
+    Attrib  opp_Turnover_PCT    6.2110867274758315
+    Attrib  opp_orb_pct    -6.585321264794992
+    Attrib  opp_ft_rate    0.6740670229247548
+    Attrib  opp_ast_PCT    -0.8865420926645743
+    Attrib opp_stl_PCT    2.8188883094785395
+    Attrib  opp_blk_PCT    -5.8311901003676905
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.065702438684706
+    Attrib  Efg_pct    5.769479674305792
+    Attrib  Turnover_PCT    6.822917088657795
+    Attrib  orb_pct    14.455802039893612
+    Attrib  ft_rate    7.446987103814022
+    Attrib  location=  home    6.315405339177482
+    Attrib  ast_PCT    -8.13900967473106
+    Attrib stl_PCT    -2.675332160502075
+    Attrib  blk_PCT    0.22935026595917368
+    Attrib  opp_Efg_pct    -3.77857553590709
+    Attrib  opp_Turnover_PCT    1.4280533888720934
+    Attrib  opp_orb_pct    -3.4119877886516456
+    Attrib  opp_ft_rate    -10.538839881164028
+    Attrib  opp_ast_PCT    -6.1105488363265055
+    Attrib opp_stl_PCT    0.9243437165902498
+    Attrib  opp_blk_PCT    -0.7721179967857011
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    4.107495455389485
+    Attrib  Efg_pct    8.576105868853194
+    Attrib  Turnover_PCT    -0.9441706975980221
+    Attrib  orb_pct    8.163850086008734
+    Attrib  ft_rate    13.818651488237254
+    Attrib  location=  home    6.841345097152366
+    Attrib  ast_PCT    6.041834542044215
+    Attrib stl_PCT    -3.968586317917211
+    Attrib  blk_PCT    3.3253892225632606
+    Attrib  opp_Efg_pct    -13.132073365613227
+    Attrib  opp_Turnover_PCT    -4.0569919280475455
+    Attrib  opp_orb_pct    -1.7277024471112146
+    Attrib  opp_ft_rate    3.848052113320234
+    Attrib  opp_ast_PCT    -2.6307454612576553
+    Attrib opp_stl_PCT    -5.53302275116651
+    Attrib  opp_blk_PCT    -5.42226548104607
+Class   loss
+    Input
+    Node 0
+Class   win
+    Input
+    Node 1
+
+
+Time taken to build model: 3.31 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2503               93.886  %
+Incorrectly Classified Instances       163                6.114  %
+Kappa statistic                          0.8777
+Mean absolute error                      0.0606
+Root mean squared error                  0.2265
+Relative absolute error                 12.1287 %
+Root relative squared error             45.3078 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.939    0.062    0.939      0.939    0.939      0.878    0.986     0.986       loss
+                 0.938    0.061    0.939      0.938    0.939      0.878    0.986     0.985       win
+Weighted Avg.    0.939    0.061    0.939      0.939    0.939      0.878    0.986     0.986     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1252   81 |    a =   loss
+   82 1251 |    b =   win
+

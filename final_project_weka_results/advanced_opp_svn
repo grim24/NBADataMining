@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CVParameterSelection -X 10 -S 1 -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     2016_advanced_results_opp_team-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-Eopp_Team-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   16
+               Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location=  home
+               ast_PCT
+              stl_PCT
+               blk_PCT
+               opp_Efg_pct
+               opp_Turnover_PCT
+               opp_orb_pct
+               opp_ft_rate
+               opp_ast_PCT
+              opp_stl_PCT
+               opp_blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.SMO
+Classifier Options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes:   loss,   win
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        10.8295 * (normalized)  Efg_pct
+ +      -4.5402 * (normalized)  Turnover_PCT
+ +       3.5442 * (normalized)  orb_pct
+ +       3.4712 * (normalized)  ft_rate
+ +       0.0248 * (normalized)  location=  home
+ +       0.0753 * (normalized)  ast_PCT
+ +       0.0516 * (normalized) stl_PCT
+ +      -0.3229 * (normalized)  blk_PCT
+ +     -10.833  * (normalized)  opp_Efg_pct
+ +       4.5561 * (normalized)  opp_Turnover_PCT
+ +      -3.5371 * (normalized)  opp_orb_pct
+ +      -3.4737 * (normalized)  opp_ft_rate
+ +      -0.0696 * (normalized)  opp_ast_PCT
+ +      -0.0594 * (normalized) opp_stl_PCT
+ +       0.302  * (normalized)  opp_blk_PCT
+ -       0.0139
+
+Number of kernel evaluations: 407537 (74.599% cached)
+
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2551               95.6864 %
+Incorrectly Classified Instances       115                4.3136 %
+Kappa statistic                          0.9137
+Mean absolute error                      0.0431
+Root mean squared error                  0.2077
+Relative absolute error                  8.6271 %
+Root relative squared error             41.5383 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.957    0.044    0.957      0.957    0.957      0.914    0.957     0.937       loss
+                 0.956    0.043    0.957      0.956    0.957      0.914    0.957     0.937       win
+Weighted Avg.    0.957    0.043    0.957      0.957    0.957      0.914    0.957     0.937     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1276   57 |    a =   loss
+   58 1275 |    b =   win
+
