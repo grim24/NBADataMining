@@ -28,7 +28,7 @@ def classifiers(records, classes):
 	f_measure = 0
 
 	decision_tree = DecisionTreeClassifier()
-	dt_prediction = cross_val_predict(decision_tree, records, classes)
+	dt_prediction = cross_val_predict(decision_tree, records, classes, cv=10)
 	dt_accuracy = metrics.accuracy_score(classes, dt_prediction)
 	dt_confusion_matrix = metrics.confusion_matrix(classes, dt_prediction)
 	dt_fmeasure = fMeasure(dt_confusion_matrix)
@@ -43,7 +43,7 @@ def classifiers(records, classes):
 		f_measure = dt_fmeasure
 
 	naive_bayes = GaussianNB()
-	nb_prediction = cross_val_predict(naive_bayes, records, classes)
+	nb_prediction = cross_val_predict(naive_bayes, records, classes, cv=10)
 	nb_accuracy = metrics.accuracy_score(classes, nb_prediction)
 	nb_confusion_matrix = metrics.confusion_matrix(classes, nb_prediction)
 	nb_fmeasure = fMeasure(nb_confusion_matrix)
@@ -58,7 +58,7 @@ def classifiers(records, classes):
 		f_measure = nb_fmeasure
 
 	ann = MLPClassifier()
-	ann_prediction = cross_val_predict(ann, records, classes)
+	ann_prediction = cross_val_predict(ann, records, classes, cv=10)
 	ann_accuracy = metrics.accuracy_score(classes, ann_prediction)
 	ann_confusion_matrix = metrics.confusion_matrix(classes, ann_prediction)
 	ann_fmeasure = fMeasure(ann_confusion_matrix)
@@ -73,7 +73,7 @@ def classifiers(records, classes):
 		f_measure = ann_fmeasure
 
 	support_vm = svm.SVC()
-	svm_prediction = cross_val_predict(support_vm, records, classes)
+	svm_prediction = cross_val_predict(support_vm, records, classes, cv=10)
 	svm_accuracy = metrics.accuracy_score(classes, svm_prediction)
 	svm_confusion_matrix = metrics.confusion_matrix(classes, svm_prediction)
 	svm_fmeasure = fMeasure(svm_confusion_matrix)
@@ -88,7 +88,7 @@ def classifiers(records, classes):
 		f_measure = svm_fmeasure
 
 	ensemble = AdaBoostClassifier()
-	ensemble_prediction = cross_val_predict(ensemble, records, classes)
+	ensemble_prediction = cross_val_predict(ensemble, records, classes, cv=10)
 	ensemble_accuracy = metrics.accuracy_score(classes, ensemble_prediction)
 	ensemble_confusion_matrix = metrics.confusion_matrix(classes, ensemble_prediction)
 	ensemble_fmeasure = fMeasure(ensemble_confusion_matrix)
