@@ -13,9 +13,6 @@ import sklearn.metrics as metrics
 from sklearn.model_selection import cross_val_predict
 import csv
 import numpy
-import math
-import random
-from statistics import mean
 
 #Calculate F-Measure based on a provided confusion matrix
 def fMeasure(confusion_matrix):
