@@ -3,5 +3,7 @@ DataMining final project for class. Parses basketball-reference.com for scores a
 
 To run, one needs to install Nokogiri using `gem install nokogiri`
 
-As of now, I just pipe the output to a file: `ruby nba_scraper.rb > 2016_results.csv`
+To obtain the csv file for the 4 factors run: `ruby nba_scraper.rb > 2016_results.csv`
+
+For advanced statistics run: `ruby nba_extra_cat_scraper.rb > 2016_results.csv`
 
