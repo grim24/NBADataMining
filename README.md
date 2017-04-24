@@ -15,5 +15,7 @@ To get the other 2 datasets run `python basic_data_transform.py` and `python adv
 
 This produces the 2016_results_opp_team.csv and 2016_advanced_results_opp_team.csv
 
+The playoffs_statistics_predictions.csv file used as the test dataset was generated manually.
+
 For the Python classification algorithms, view README-python.txt.
 For the Weka classification algorithsm, view README-weka.txt.
