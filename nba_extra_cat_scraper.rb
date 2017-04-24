@@ -2,10 +2,19 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 require 'rest-client'
+#This program will iterate through the 2016-2017 NBA Games and 
+#print out the  four factors and advanced statistics for all the games.
+#Output should be redirected to a csv file 
 
+
+
+#parse_game takes in HTML web page, removes the comments 
+#and parses the four factors plus other advanced statistics for every game
 def parse_game(score_page)
   #parse score
   score = score_page.search('div#all_line_score')
+
+  #strip comments, since data needed is hidden in comments
   score.xpath('//comment()').each { |comment| comment.replace(comment.text) }
   score_table =  score.css("table")
   scores = score_table.css("td").css("strong")
@@ -57,23 +66,45 @@ def parse_game(score_page)
   home_stl_pct = home_advanced.css("td[data-stat='stl_pct']").text
   home_blk_pct = home_advanced.css("td[data-stat='blk_pct']").text
   
-  
-  
- 
-
-
-
+  #this output will be redirected ot a csv file
   puts away_team + ", " + away_score.to_s + ", " + away_eft_pct.to_s + ", " + away_tov_pct.to_s + ", " + away_orb_pct.to_s + ", " + away_ft_rate.to_s + ", away, " + away_ast_pct.to_s + ", " + away_stl_pct.to_s + ", " + away_blk_pct.to_s + ", " + away_result 
   puts home_team + ", " + home_score.to_s + "," + home_eft_pct.to_s + "," + home_tov_pct.to_s + "," + home_orb_pct.to_s + "," + home_ft_rate.to_s + ", home, " + home_ast_pct.to_s + ", " + home_stl_pct.to_s + ", " + home_blk_pct.to_s + ", " + home_result
 
 end
 
-puts "Team, score,  Efg_pct, Turnover_PCT, orb_pct, ft_rate, location, ast_PCT, stl_PCT, blk_PCT, class"
 
-(1..12).each do |month|
+#Main Start
+puts "Team, score,  Efg_pct, Turnover_PCT, orb_pct, ft_rate, class"
+
+#Iterate throught 2016 Games
+(7..12).each do |month|
   (1..31).each do |day|
 
     address = "http://www.basketball-reference.com/boxscores/index.fcgi?month=" + month.to_s + "&day=" + day.to_s + "&year=" + 2016.to_s
+
+    page = Nokogiri::HTML(RestClient.get(address))   
+    teams = page.css("table").css(".teams")
+
+    links = []
+    refs = teams.css("td.gamelink").css("a")
+    refs.each do |ref|
+      links << (ref['href'])
+    end
+
+
+    prefix = "http://www.basketball-reference.com/"
+    links.each do |link|
+      parse_game(Nokogiri::HTML(RestClient.get(prefix + link)))
+    end
+
+  end
+end
+
+#Iterate through 2017 NBA Games
+(1..7).each do |month|
+  (1..31).each do |day|
+
+    address = "http://www.basketball-reference.com/boxscores/index.fcgi?month=" + month.to_s + "&day=" + day.to_s + "&year=" + 2017.to_s
 
     page = Nokogiri::HTML(RestClient.get(address))   
     teams = page.css("table").css(".teams")
