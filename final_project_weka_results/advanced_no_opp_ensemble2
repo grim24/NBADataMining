@@ -1,0 +1,901 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.meta.CVParameterSelection -- -X 10 -S 1 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2016_advanced_statistics-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.RemoveByName-Escore-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.RemoveByName-ETeam-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    2666
+Attributes:   9
+                Efg_pct
+               Turnover_PCT
+               orb_pct
+               ft_rate
+               location
+               ast_PCT
+               stl_PCT
+               blk_PCT
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.5274836279426088
+    Node 2    -2.518281817969792
+    Node 3    1.4800682782475931
+    Node 4    -1.7471990085942704
+    Node 5    2.6233468896648993
+    Node 6    -1.5672175438468927
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.5274836279426091
+    Node 2    2.5182818179697923
+    Node 3    -1.4800682782475931
+    Node 4    1.747199008594271
+    Node 5    -2.623346889664899
+    Node 6    1.5672175438468925
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    6.739699033349017
+    Attrib   Efg_pct    26.757982579348567
+    Attrib  Turnover_PCT    -10.939201544177426
+    Attrib  orb_pct    3.231471753469328
+    Attrib  ft_rate    1.4308496165918556
+    Attrib  location= home    2.38395485818993
+    Attrib  ast_PCT    0.3191925275182355
+    Attrib  stl_PCT    2.7201519618050276
+    Attrib  blk_PCT    19.662452333184973
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -14.777169431537377
+    Attrib   Efg_pct    -10.63299387545529
+    Attrib  Turnover_PCT    -5.727939752958889
+    Attrib  orb_pct    -2.288613310237834
+    Attrib  ft_rate    -11.359508584972659
+    Attrib  location= home    1.3798302994629756
+    Attrib  ast_PCT    -10.241034255766403
+    Attrib  stl_PCT    -6.6520727590162085
+    Attrib  blk_PCT    8.879092267343406
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -11.101779911282645
+    Attrib   Efg_pct    13.140277717728319
+    Attrib  Turnover_PCT    0.6830959061046579
+    Attrib  orb_pct    9.287825034973817
+    Attrib  ft_rate    -2.975161698374839
+    Attrib  location= home    4.705148754664507
+    Attrib  ast_PCT    3.461257785815063
+    Attrib  stl_PCT    10.042449487668895
+    Attrib  blk_PCT    -8.108415851125013
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -11.049160514887713
+    Attrib   Efg_pct    -16.046198793975023
+    Attrib  Turnover_PCT    5.272817174132035
+    Attrib  orb_pct    -7.135498771559148
+    Attrib  ft_rate    -3.364930302027674
+    Attrib  location= home    -0.20625526944808226
+    Attrib  ast_PCT    1.0040082653209637
+    Attrib  stl_PCT    -4.345853904269123
+    Attrib  blk_PCT    -2.7423909822348222
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -9.354539459628944
+    Attrib   Efg_pct    8.312569062043968
+    Attrib  Turnover_PCT    -9.757359645219235
+    Attrib  orb_pct    4.448243998684095
+    Attrib  ft_rate    9.867281081207679
+    Attrib  location= home    -0.25258524592173204
+    Attrib  ast_PCT    5.587177828782852
+    Attrib  stl_PCT    -1.3010212630051545
+    Attrib  blk_PCT    -14.676239066834254
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 1.16
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.2477736178854695
+    Node 2    -2.242334564498467
+    Node 3    -3.7597051345011843
+    Node 4    -2.0806338754516074
+    Node 5    -1.1432180438127204
+    Node 6    -5.23227947615448
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.247773617885437
+    Node 2    2.242334564498418
+    Node 3    3.7597051345008223
+    Node 4    2.08063387545158
+    Node 5    1.1432180438127162
+    Node 6    5.232279476158986
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    11.325187565314511
+    Attrib   Efg_pct    35.708317256109076
+    Attrib  Turnover_PCT    -9.054548679811687
+    Attrib  orb_pct    8.619394048697789
+    Attrib  ft_rate    7.829165793539364
+    Attrib  location= home    -10.700912994343136
+    Attrib  ast_PCT    2.3724960416729566
+    Attrib  stl_PCT    12.59133268670367
+    Attrib  blk_PCT    4.652415208026059
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -11.160717061261924
+    Attrib   Efg_pct    -10.449319617198615
+    Attrib  Turnover_PCT    12.350130165541728
+    Attrib  orb_pct    8.93650989468431
+    Attrib  ft_rate    4.552873784812868
+    Attrib  location= home    -0.10516763938768121
+    Attrib  ast_PCT    3.882328161758531
+    Attrib  stl_PCT    6.724517662040097
+    Attrib  blk_PCT    5.643068938778051
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    3.4843905534436828
+    Attrib   Efg_pct    16.208098935229653
+    Attrib  Turnover_PCT    -2.835552253066639
+    Attrib  orb_pct    6.281247734673106
+    Attrib  ft_rate    -0.0850695942732586
+    Attrib  location= home    15.428148771302556
+    Attrib  ast_PCT    -6.9114464533169055
+    Attrib  stl_PCT    3.585546208056093
+    Attrib  blk_PCT    16.85950820185392
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -10.313050930144783
+    Attrib   Efg_pct    -5.845727105120533
+    Attrib  Turnover_PCT    -1.0202641017523506
+    Attrib  orb_pct    -1.625944126318071
+    Attrib  ft_rate    16.445601879273738
+    Attrib  location= home    9.063272595141177
+    Attrib  ast_PCT    -14.28340093258571
+    Attrib  stl_PCT    1.1957168629435988
+    Attrib  blk_PCT    -1.9039034418312997
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -9.161740062757987
+    Attrib   Efg_pct    21.45836550742436
+    Attrib  Turnover_PCT    -7.279026789826705
+    Attrib  orb_pct    14.319915277752312
+    Attrib  ft_rate    3.769952516503761
+    Attrib  location= home    -1.4912336296706392
+    Attrib  ast_PCT    3.288226302324466
+    Attrib  stl_PCT    5.778385066434408
+    Attrib  blk_PCT    -0.7111186577065192
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.36
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.7139446981648714
+    Node 2    -2.969048878134103
+    Node 3    -2.3883983671803426
+    Node 4    -1.637655171293458
+    Node 5    -1.1879097452996914
+    Node 6    -7.624330159290068
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.713944694822211
+    Node 2    2.9690488752495967
+    Node 3    2.388398365271966
+    Node 4    1.6376551691401557
+    Node 5    1.1879097426361966
+    Node 6    7.624329897738846
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.3390322400496698
+    Attrib   Efg_pct    27.652132723057072
+    Attrib  Turnover_PCT    -5.798427731588867
+    Attrib  orb_pct    3.412420621321699
+    Attrib  ft_rate    0.8005342316310414
+    Attrib  location= home    -10.126965932488435
+    Attrib  ast_PCT    4.346160256543166
+    Attrib  stl_PCT    7.269714923432373
+    Attrib  blk_PCT    3.4865321617007865
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.689570299257759
+    Attrib   Efg_pct    -5.524365178510738
+    Attrib  Turnover_PCT    -4.815334017595374
+    Attrib  orb_pct    -0.36726248327257704
+    Attrib  ft_rate    1.9463295818695283
+    Attrib  location= home    13.64553578127987
+    Attrib  ast_PCT    -9.920476919651398
+    Attrib  stl_PCT    -1.5525914190051056
+    Attrib  blk_PCT    18.79864492339076
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -14.988496748985764
+    Attrib   Efg_pct    24.366811570786844
+    Attrib  Turnover_PCT    11.144743330159386
+    Attrib  orb_pct    4.024227641252307
+    Attrib  ft_rate    -6.391504322211833
+    Attrib  location= home    9.398015699726425
+    Attrib  ast_PCT    11.208098330077721
+    Attrib  stl_PCT    -5.2781624300746195
+    Attrib  blk_PCT    -10.550637873280161
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -8.63384822015065
+    Attrib   Efg_pct    -13.514929390469051
+    Attrib  Turnover_PCT    2.3954957688267906
+    Attrib  orb_pct    -0.2568548753731498
+    Attrib  ft_rate    1.8044775986270691
+    Attrib  location= home    -5.376769638135009
+    Attrib  ast_PCT    -15.626553989527222
+    Attrib  stl_PCT    1.7856812033986564
+    Attrib  blk_PCT    -4.686517160637141
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -12.912333945233646
+    Attrib   Efg_pct    15.154222444810499
+    Attrib  Turnover_PCT    -14.746747592848966
+    Attrib  orb_pct    11.35680198313959
+    Attrib  ft_rate    0.9291391070149301
+    Attrib  location= home    3.627518326886857
+    Attrib  ast_PCT    9.950446145564014
+    Attrib  stl_PCT    10.163302763303715
+    Attrib  blk_PCT    5.018059896766059
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.52
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.6866133278557535
+    Node 2    -0.8616549920045824
+    Node 3    -6.948670199641815
+    Node 4    -0.7048873158408435
+    Node 5    -6.175076633658493
+    Node 6    -6.64085411415297
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.6866133293752319
+    Node 2    0.8616549936161254
+    Node 3    6.94867135806275
+    Node 4    0.7048873196604962
+    Node 5    6.17507627257139
+    Node 6    6.640854115718743
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    2.9790852844933404
+    Attrib   Efg_pct    14.115122771055777
+    Attrib  Turnover_PCT    -2.5653141392333954
+    Attrib  orb_pct    15.083746001736046
+    Attrib  ft_rate    11.183591520116886
+    Attrib  location= home    -12.19756037114793
+    Attrib  ast_PCT    -9.931637300067132
+    Attrib  stl_PCT    16.302216517742487
+    Attrib  blk_PCT    -0.651594690791707
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -20.411965727343762
+    Attrib   Efg_pct    18.22115661517773
+    Attrib  Turnover_PCT    2.4152102759212335
+    Attrib  orb_pct    -6.56501064817313
+    Attrib  ft_rate    0.6511814327341067
+    Attrib  location= home    1.7496482498565398
+    Attrib  ast_PCT    12.483803957230117
+    Attrib  stl_PCT    0.3924535362564236
+    Attrib  blk_PCT    -5.506935324433917
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.424099460111682
+    Attrib   Efg_pct    -3.7917352922282865
+    Attrib  Turnover_PCT    -8.521975157124684
+    Attrib  orb_pct    9.213555931247862
+    Attrib  ft_rate    7.319985062230613
+    Attrib  location= home    15.043178387971006
+    Attrib  ast_PCT    -19.99561957071992
+    Attrib  stl_PCT    9.828491013751854
+    Attrib  blk_PCT    4.273548246486786
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -6.647980557068026
+    Attrib   Efg_pct    19.144137185706647
+    Attrib  Turnover_PCT    2.303181507012964
+    Attrib  orb_pct    8.32002718410095
+    Attrib  ft_rate    13.041911945811492
+    Attrib  location= home    4.474697722298275
+    Attrib  ast_PCT    1.7610445658245677
+    Attrib  stl_PCT    4.498511810119125
+    Attrib  blk_PCT    4.0168873750970056
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -14.617808404158628
+    Attrib   Efg_pct    11.14522648480685
+    Attrib  Turnover_PCT    -11.504714062731278
+    Attrib  orb_pct    4.804531227304667
+    Attrib  ft_rate    -8.218415481015326
+    Attrib  location= home    3.4474984766215373
+    Attrib  ast_PCT    7.7676268907223545
+    Attrib  stl_PCT    18.889585278913984
+    Attrib  blk_PCT    4.517550299801103
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.29
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.0917360356744132
+    Node 2    -7.430719879983801
+    Node 3    -4.03354851033941
+    Node 4    -7.4918482549553636
+    Node 5    -2.071800300474676
+    Node 6    -2.4688001248720832
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.0917360369073665
+    Node 2    7.430719947942846
+    Node 3    4.033548511360991
+    Node 4    7.491848026060616
+    Node 5    2.0718003018764604
+    Node 6    2.4688001261172823
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -10.034838477192046
+    Attrib   Efg_pct    -3.436906636927154
+    Attrib  Turnover_PCT    6.451120892619706
+    Attrib  orb_pct    11.78999254445936
+    Attrib  ft_rate    9.983698267124193
+    Attrib  location= home    1.7835154450116903
+    Attrib  ast_PCT    8.685982450101678
+    Attrib  stl_PCT    8.981744771632524
+    Attrib  blk_PCT    4.43925973928019
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -7.2575207650283025
+    Attrib   Efg_pct    8.59909033353752
+    Attrib  Turnover_PCT    10.601907271094786
+    Attrib  orb_pct    1.4699975398576253
+    Attrib  ft_rate    10.109898819482742
+    Attrib  location= home    -0.5055385706091226
+    Attrib  ast_PCT    -10.634645827429342
+    Attrib  stl_PCT    13.605051057947637
+    Attrib  blk_PCT    -3.9156365036833263
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -12.568487443974021
+    Attrib   Efg_pct    19.845295152207118
+    Attrib  Turnover_PCT    -12.498212721377138
+    Attrib  orb_pct    14.04331315185145
+    Attrib  ft_rate    -2.914665991772602
+    Attrib  location= home    0.8957629851277844
+    Attrib  ast_PCT    4.596677572640196
+    Attrib  stl_PCT    11.724344640283837
+    Attrib  blk_PCT    3.458497439292929
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.464933378403452
+    Attrib   Efg_pct    8.805131082135828
+    Attrib  Turnover_PCT    -4.845009960629516
+    Attrib  orb_pct    -3.3238068506086753
+    Attrib  ft_rate    -7.188766126562477
+    Attrib  location= home    -16.185728007386395
+    Attrib  ast_PCT    -3.8855491712342234
+    Attrib  stl_PCT    -6.046614121601368
+    Attrib  blk_PCT    19.14662087202428
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.4374034015371293
+    Attrib   Efg_pct    11.343605968288719
+    Attrib  Turnover_PCT    -11.274834658547316
+    Attrib  orb_pct    -0.7623800092594473
+    Attrib  ft_rate    -3.756574020433176
+    Attrib  location= home    14.169378481973492
+    Attrib  ast_PCT    9.100161961327014
+    Attrib  stl_PCT    9.82049275145154
+    Attrib  blk_PCT    10.466786840161607
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.23
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.4137719365224154
+    Node 2    -8.039961649638101
+    Node 3    -6.1449100436682675
+    Node 4    -0.5336489656219959
+    Node 5    -6.418601462512615
+    Node 6    -5.767497357832338
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.4137719364664895
+    Node 2    8.039961614119042
+    Node 3    6.1449100427336445
+    Node 4    0.5336489655039061
+    Node 5    6.418601469545866
+    Node 6    5.767497364371221
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -13.18112584381134
+    Attrib   Efg_pct    18.182946776434225
+    Attrib  Turnover_PCT    -16.26381108605476
+    Attrib  orb_pct    12.717421544500674
+    Attrib  ft_rate    -1.9050675684729719
+    Attrib  location= home    3.0044631364267778
+    Attrib  ast_PCT    10.351016254727963
+    Attrib  stl_PCT    16.25090898287482
+    Attrib  blk_PCT    4.5281097964870884
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -19.732042959010514
+    Attrib   Efg_pct    -12.688981284948378
+    Attrib  Turnover_PCT    -7.403580996692589
+    Attrib  orb_pct    2.2437827614616075
+    Attrib  ft_rate    7.8328448676277835
+    Attrib  location= home    -0.6720965892202106
+    Attrib  ast_PCT    5.359608347564022
+    Attrib  stl_PCT    -16.25136204911399
+    Attrib  blk_PCT    2.222660366876204
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -5.3368607455597
+    Attrib   Efg_pct    -3.9804051191754977
+    Attrib  Turnover_PCT    0.435814576890382
+    Attrib  orb_pct    -12.274794335329187
+    Attrib  ft_rate    6.948572488971371
+    Attrib  location= home    -5.938055961573668
+    Attrib  ast_PCT    -1.813074775117999
+    Attrib  stl_PCT    3.3443113783967706
+    Attrib  blk_PCT    -1.8104433067184205
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -12.593868780032773
+    Attrib   Efg_pct    19.59009564958571
+    Attrib  Turnover_PCT    3.123924737924317
+    Attrib  orb_pct    8.853301800527714
+    Attrib  ft_rate    -3.7075632597949912
+    Attrib  location= home    1.9519181729235997
+    Attrib  ast_PCT    -4.275849032300407
+    Attrib  stl_PCT    3.0578492196819975
+    Attrib  blk_PCT    -6.228380302332915
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -12.993801221344635
+    Attrib   Efg_pct    -0.7498766639865103
+    Attrib  Turnover_PCT    0.8892773986675284
+    Attrib  orb_pct    -4.327806772679951
+    Attrib  ft_rate    -0.26040959857003043
+    Attrib  location= home    -6.3928467535000415
+    Attrib  ast_PCT    -5.005662265969734
+    Attrib  stl_PCT    14.537305024783517
+    Attrib  blk_PCT    12.725319238382841
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.18
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.0064859903279341005
+    Node 2    6.823655884643722
+    Node 3    -1.0970835466938198
+    Node 4    -7.037632213596847
+    Node 5    -8.68566971826139
+    Node 6    7.427128223722981
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.00648599032792882
+    Node 2    -6.823655884644178
+    Node 3    1.0970835466938378
+    Node 4    7.0376322135972815
+    Node 5    8.685669718261982
+    Node 6    -7.427128223723436
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -12.784175060205547
+    Attrib   Efg_pct    -11.127960347932913
+    Attrib  Turnover_PCT    11.306922196753797
+    Attrib  orb_pct    -11.96097313670451
+    Attrib  ft_rate    9.659853636972278
+    Attrib  location= home    -0.8424567258836744
+    Attrib  ast_PCT    1.6415733414315155
+    Attrib  stl_PCT    4.699552620457912
+    Attrib  blk_PCT    -8.370605912624946
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.832786162309352
+    Attrib   Efg_pct    -16.155865295898316
+    Attrib  Turnover_PCT    6.8137697497951
+    Attrib  orb_pct    -6.1936054487801275
+    Attrib  ft_rate    23.374078066734047
+    Attrib  location= home    -7.600913237991052
+    Attrib  ast_PCT    -9.442109028394967
+    Attrib  stl_PCT    2.9608943141777484
+    Attrib  blk_PCT    -6.574973638780302
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -10.318805603400525
+    Attrib   Efg_pct    7.604004278774012
+    Attrib  Turnover_PCT    1.9566170506595828
+    Attrib  orb_pct    4.884398099266265
+    Attrib  ft_rate    31.00224198672266
+    Attrib  location= home    8.71051047323933
+    Attrib  ast_PCT    0.40057182243434114
+    Attrib  stl_PCT    6.817145527235237
+    Attrib  blk_PCT    -0.20617725835020054
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -15.607998023247452
+    Attrib   Efg_pct    12.966343216192403
+    Attrib  Turnover_PCT    11.563614302385194
+    Attrib  orb_pct    4.711105329269039
+    Attrib  ft_rate    7.726411981656039
+    Attrib  location= home    -2.938157724858716
+    Attrib  ast_PCT    -4.852761401216422
+    Attrib  stl_PCT    0.0783787390822574
+    Attrib  blk_PCT    -9.976989621821936
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -10.71863571001277
+    Attrib   Efg_pct    0.8103457190693906
+    Attrib  Turnover_PCT    -2.183381305672927
+    Attrib  orb_pct    6.587765656666472
+    Attrib  ft_rate    9.836914628262047
+    Attrib  location= home    -0.5599473932954343
+    Attrib  ast_PCT    -0.5885590887117608
+    Attrib  stl_PCT    2.1033437663293046
+    Attrib  blk_PCT    -13.31961724628497
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.24
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.12937706014923375
+    Node 2    -1.4501222211658864
+    Node 3    -0.7917777649624899
+    Node 4    -1.0909999464365547
+    Node 5    2.2828524117971996
+    Node 6    -2.168860413821713
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.12937706014923367
+    Node 2    1.4501222211658864
+    Node 3    0.7917777649624893
+    Node 4    1.0909999464365538
+    Node 5    -2.282852411797199
+    Node 6    2.168860413821712
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -15.8670483460454
+    Attrib   Efg_pct    -7.19572916698451
+    Attrib  Turnover_PCT    5.880995617801392
+    Attrib  orb_pct    4.580468788508201
+    Attrib  ft_rate    15.150207018179271
+    Attrib  location= home    -6.07369648907271
+    Attrib  ast_PCT    2.9680942359522913
+    Attrib  stl_PCT    -14.396463876185983
+    Attrib  blk_PCT    -4.463783914549918
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -9.833017882343665
+    Attrib   Efg_pct    -6.815805331246906
+    Attrib  Turnover_PCT    -9.382342811888917
+    Attrib  orb_pct    -0.2637086350487976
+    Attrib  ft_rate    14.455637080525982
+    Attrib  location= home    9.739705174201822
+    Attrib  ast_PCT    19.684528628012078
+    Attrib  stl_PCT    -2.315433608341782
+    Attrib  blk_PCT    -10.620359820126952
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -11.945618978599576
+    Attrib   Efg_pct    3.075071266522749
+    Attrib  Turnover_PCT    2.719804761811323
+    Attrib  orb_pct    -2.8423468792783155
+    Attrib  ft_rate    -16.72400842569472
+    Attrib  location= home    2.7799671287842993
+    Attrib  ast_PCT    1.1443378537392281
+    Attrib  stl_PCT    12.555262424361743
+    Attrib  blk_PCT    -9.282568526183294
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -11.664730496353311
+    Attrib   Efg_pct    1.3340103147198612
+    Attrib  Turnover_PCT    15.856150187903447
+    Attrib  orb_pct    -17.557815246366065
+    Attrib  ft_rate    11.644432481484216
+    Attrib  location= home    5.668937422953601
+    Attrib  ast_PCT    29.15860422575164
+    Attrib  stl_PCT    18.306847512683888
+    Attrib  blk_PCT    -10.982077790910584
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -5.243031789057017
+    Attrib   Efg_pct    29.376931329954683
+    Attrib  Turnover_PCT    2.737384579550146
+    Attrib  orb_pct    3.2424174434434008
+    Attrib  ft_rate    5.813135600284052
+    Attrib  location= home    3.802904819488197
+    Attrib  ast_PCT    13.941486723745431
+    Attrib  stl_PCT    12.080966269452045
+    Attrib  blk_PCT    13.110101326045193
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.27
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.21080824806190063
+    Node 2    -5.68076048778913
+    Node 3    -0.4815152675096549
+    Node 4    -3.21024550453301
+    Node 5    -0.5301412687380753
+    Node 6    -1.8765759390913161
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.21080749688154532
+    Node 2    5.680683748706588
+    Node 3    0.48151540384896363
+    Node 4    3.210218292107173
+    Node 5    0.5301410606100321
+    Node 6    1.876575003183243
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.315391005439233
+    Attrib   Efg_pct    18.513041876356848
+    Attrib  Turnover_PCT    7.433494789431686
+    Attrib  orb_pct    13.637253451245272
+    Attrib  ft_rate    13.617993456739631
+    Attrib  location= home    1.5662971762046365
+    Attrib  ast_PCT    -13.324752368334012
+    Attrib  stl_PCT    14.590658712141778
+    Attrib  blk_PCT    -5.705736378978688
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -6.743474373274552
+    Attrib   Efg_pct    9.075174987852723
+    Attrib  Turnover_PCT    -2.8962161076452384
+    Attrib  orb_pct    8.69888526017684
+    Attrib  ft_rate    -3.6611868526402485
+    Attrib  location= home    -9.452142925912248
+    Attrib  ast_PCT    14.572504940081691
+    Attrib  stl_PCT    -5.04190459517282
+    Attrib  blk_PCT    11.764795130137973
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -5.861435994399274
+    Attrib   Efg_pct    -2.9643598952274766
+    Attrib  Turnover_PCT    -0.4859637231544338
+    Attrib  orb_pct    -3.6760901258188867
+    Attrib  ft_rate    2.251039895669033
+    Attrib  location= home    -2.2810135467560912
+    Attrib  ast_PCT    -1.0876797367366084
+    Attrib  stl_PCT    4.016295311833656
+    Attrib  blk_PCT    6.3859427475455
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.605133970108354
+    Attrib   Efg_pct    -2.301729580489151
+    Attrib  Turnover_PCT    1.3397250127700073
+    Attrib  orb_pct    -3.7004915319890115
+    Attrib  ft_rate    13.219402846533109
+    Attrib  location= home    5.9906319171675815
+    Attrib  ast_PCT    7.583780978974679
+    Attrib  stl_PCT    -0.9303267478633833
+    Attrib  blk_PCT    -5.598780435990213
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -15.916096872436663
+    Attrib   Efg_pct    4.609715749209777
+    Attrib  Turnover_PCT    -8.050562715046564
+    Attrib  orb_pct    1.902693978957603
+    Attrib  ft_rate    -12.346027765473405
+    Attrib  location= home    5.508153212241249
+    Attrib  ast_PCT    8.85702345280072
+    Attrib  stl_PCT    3.9660362452625013
+    Attrib  blk_PCT    3.2822700599983863
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.23
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.functions.MultilayerPerceptron
+Classifier Options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.13330618059007687
+    Node 2    -3.906911880995073
+    Node 3    -7.385840513303853
+    Node 4    -12.64644094044853
+    Node 5    11.704499280760121
+    Node 6    -6.59879227764768
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.1333061795480513
+    Node 2    3.9069100619760113
+    Node 3    7.38583711946548
+    Node 4    12.64642962783487
+    Node 5    -11.704490012981916
+    Node 6    6.59879278440796
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -14.583021323655755
+    Attrib   Efg_pct    -1.8338704735347293
+    Attrib  Turnover_PCT    8.903527097702675
+    Attrib  orb_pct    -5.592057534212619
+    Attrib  ft_rate    3.0068824988264593
+    Attrib  location= home    -3.062179733137425
+    Attrib  ast_PCT    -2.8886065203412516
+    Attrib  stl_PCT    2.308806616328216
+    Attrib  blk_PCT    -9.672735228071694
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -14.08768869635385
+    Attrib   Efg_pct    0.1682421453635937
+    Attrib  Turnover_PCT    -8.1938804969419
+    Attrib  orb_pct    6.777542632466591
+    Attrib  ft_rate    -4.589162677516295
+    Attrib  location= home    4.024389693410629
+    Attrib  ast_PCT    15.225205303855137
+    Attrib  stl_PCT    12.779538242020507
+    Attrib  blk_PCT    3.2139455242996755
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -10.349387455759365
+    Attrib   Efg_pct    7.206177276384523
+    Attrib  Turnover_PCT    4.981702503559283
+    Attrib  orb_pct    1.6801944470856505
+    Attrib  ft_rate    11.248279818225695
+    Attrib  location= home    2.310598803478162
+    Attrib  ast_PCT    1.1405052421646327
+    Attrib  stl_PCT    10.294993281011793
+    Attrib  blk_PCT    -6.33027929501168
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -12.573259652160358
+    Attrib   Efg_pct    -5.5899377668044945
+    Attrib  Turnover_PCT    6.673077025296411
+    Attrib  orb_pct    0.16085447220225846
+    Attrib  ft_rate    20.2837893515353
+    Attrib  location= home    -1.5366404723321434
+    Attrib  ast_PCT    2.216204887289248
+    Attrib  stl_PCT    18.318515091372056
+    Attrib  blk_PCT    -15.610806945759316
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -12.659512173000124
+    Attrib   Efg_pct    -4.15659163518631
+    Attrib  Turnover_PCT    -9.272344887040566
+    Attrib  orb_pct    -6.217753483281751
+    Attrib  ft_rate    7.506675257447904
+    Attrib  location= home    -6.189284742959184
+    Attrib  ast_PCT    -5.706998487441572
+    Attrib  stl_PCT    11.026575188021871
+    Attrib  blk_PCT    13.446443546450444
+Class  loss
+    Input
+    Node 0
+Class  win
+    Input
+    Node 1
+
+
+Weight: 0.24
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 16.87 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1954               73.2933 %
+Incorrectly Classified Instances       712               26.7067 %
+Kappa statistic                          0.4659
+Mean absolute error                      0.3256
+Root mean squared error                  0.4341
+Relative absolute error                 65.115  %
+Root relative squared error             86.8121 %
+Total Number of Instances             2666     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.740    0.274    0.730      0.740    0.735      0.466    0.802     0.788      loss
+                 0.726    0.260    0.736      0.726    0.731      0.466    0.802     0.799      win
+Weighted Avg.    0.733    0.267    0.733      0.733    0.733      0.466    0.802     0.794     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 986 347 |   a =  loss
+ 365 968 |   b =  win
+
